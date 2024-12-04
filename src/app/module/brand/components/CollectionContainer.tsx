@@ -16,8 +16,8 @@ export const CollectionContainer = () => {
           </DescriptionHeading>
         </div>
         <div className="flex justify-center gap-4 pt-6">
-          <Button>Men's</Button>
-          <Button variant="outline">Women's</Button>
+          <Button>Men `&lsquo;`s</Button>
+          <Button variant="outline">Women</Button>
         </div>
       </section>
       <div className="pt-0 pb-4 flex justify-end w-full">

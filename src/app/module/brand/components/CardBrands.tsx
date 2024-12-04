@@ -12,8 +12,8 @@ interface BrandCardProps {
 
 export const CardBrands = ({
   id,
-  image,
-  title,
+  // image,
+  // title,
   logo,
   width,
   height,

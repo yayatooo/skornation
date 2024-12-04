@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { TittleHeading } from "../../common/ui/TittleHeading";
 import { DescriptionHeading } from "../../common/ui/DescriptionHeading";
