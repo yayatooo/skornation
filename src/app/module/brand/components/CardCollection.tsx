@@ -12,6 +12,7 @@ export const CardCollection = () => {
     <Swiper
       breakpoints={{
         350: { slidesPerView: 1.2, spaceBetween: 10 },
+        490: { slidesPerView: 1.8, spaceBetween: 10 },
         768: { slidesPerView: 3, spaceBetween: 10 },
         1024: { slidesPerView: 3, spaceBetween: 12 },
       }}

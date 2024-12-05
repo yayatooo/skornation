@@ -7,7 +7,7 @@ export const Address = () => {
     <section>
     <div className="flex justify-center">
       <Image
-        src="/assets/outline.png"
+        src="/assets/outline.svg"
         width={243}
         height={152}
         alt="store"
