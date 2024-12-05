@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const SwiperAbout = () => {
   return (
-    <section className="py-4">
+    <section className="my-4">
       <Swiper
         breakpoints={{
           350: {

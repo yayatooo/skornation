@@ -65,8 +65,9 @@ export default {
 			darkThird: "#333333",
 		},
 		screens : {
-			mini: "490px",
-			Ipad: "570px"
+			mini: "450px",
+			Ipad: "510px",
+			Ipad2:"520px"
 		}
   	}
   },

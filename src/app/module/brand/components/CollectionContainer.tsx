@@ -7,7 +7,7 @@ import { CardCollection } from "./CardCollection";
 export const CollectionContainer = () => {
   return (
     <>
-      <section className="w-10/12 mx-auto pb-8">
+      <section className="w-10/12 mx-auto">
         <div className="text-start">
           <TittleHeading>Our Collection</TittleHeading>
           <DescriptionHeading>
@@ -20,7 +20,7 @@ export const CollectionContainer = () => {
           <Button variant="outline">Women</Button>
         </div>
       </section>
-      <div className="pt-0 pb-4 flex justify-end w-full">
+      <div className="py-6 flex justify-end w-full">
         <div className="w-full">
           <CardCollection />
         </div>

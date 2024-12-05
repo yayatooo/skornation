@@ -14,7 +14,8 @@ export const CardProduct = () => {
           breakpoints={{
             350: { slidesPerView: 1.3, spaceBetween: 10 },
             490: { slidesPerView: 1.7, spaceBetween: 10 },
-            768: { slidesPerView: 2.5, spaceBetween: 32 },
+            650: { slidesPerView: 2.1, spaceBetween: 10 },
+            750: { slidesPerView: 2.5, spaceBetween: 32 },
             1024: { slidesPerView: 3.5, spaceBetween: 10 },
           }}
           loop={false}

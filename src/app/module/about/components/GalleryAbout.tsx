@@ -6,7 +6,7 @@ import { SwiperAbout } from "./SwiperAbout";
 
 export const GalleryAbout = () => {
   return (
-    <section className="pt-32 mini:pt-44 Ipad:pt-52 sm:pt-80">
+    <section className="pt-28 mini:pt-36 Ipad:pt-40 Ipad2:pt-48 sm:pt-80">
       <div className="w-10/12 mx-auto pt-4">
         <TittleHeading>Explore Our Store</TittleHeading>
         <DescriptionHeading>

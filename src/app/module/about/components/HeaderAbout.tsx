@@ -3,8 +3,8 @@ import React from "react";
 
 export const HeaderAbout = () => {
   return (
-    <section className="bg-redPrimary h-[213px] lg:h-[320px]">
-      <div className="w-10/12 mx-auto py-4 flex items-center justify-between">
+    <section className="bg-redPrimary pt-6 h-[213px] lg:h-[320px]">
+      <div className="w-10/12 mx-auto flex items-center justify-between">
         <div className="text-white">
           <h1 className="font-bold text-2xl">FIND YOUR</h1>
           <div className="">
@@ -25,7 +25,7 @@ export const HeaderAbout = () => {
           />
         </div>
       </div>
-      <div className="relative w-full flex justify-center">
+      <div className="relative py-3 w-full flex justify-center">
         <div className="w-10/12 max-w-screen-md">
           <Image
             src="/assets/about-img.png"
