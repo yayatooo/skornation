@@ -16,7 +16,7 @@ export default function StorePage() {
           All the categories you need are in the SKOR which is ready to provide
           products according to your needs
         </DescriptionHeading>
-        <div className="w-full max-w-6xl mx-auto flex flex-col h-[405px] mt-2 mb-8">
+        {/* <div className="w-full max-w-6xl mx-auto flex flex-col h-[405px] mt-2 mb-8">
           <div className="flex gap-x-2 justify-center items-center">
             {[
               { src: "/assets/inspired-2.png", width: 170, height: 170 },
@@ -44,20 +44,8 @@ export default function StorePage() {
               />
             </div>
           </div>
-
-          {/* {getInspired.map((item) => (
-            <div key={item.id} className="flex justify-center items-center">
-              <Image
-                src={item.image}
-                width={item.width}
-                height={item.height}
-                alt={item.title}
-                className="object-fill" // Add object-cover for better image handling
-              />
-            </div>
-          ))} */}
-        </div>
-        <div className="flex justify-center gap-8 py-8 border-y-2 border-darkThird">
+        </div> */}
+        <div className="flex justify-center gap-8 py-8 my-4 border-y-2 border-darkThird">
           <Facebook />
           <Instagram />
           <Send />
