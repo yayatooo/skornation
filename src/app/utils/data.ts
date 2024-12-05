@@ -157,8 +157,26 @@ export const CardModel = [
 ];
 
 
-// export const getInspired = [
-//   {
-    
-//   },
-// ] 
+export const getInspired = [
+  {
+    id: 1,
+    title: "gallery",
+    image: "/assets/inspired-2.png",
+    width: 170,
+    height: 170
+  },
+  {
+    id: 2,
+    title: "gallery",
+    image: "/assets/inspired-3.png",
+    width: 170,
+    height: 170
+  },
+  {
+    id: 3,
+    title: "gallery",
+    image: "/assets/inspired-1.png",
+    width: 345,
+    height: 230
+  },
+] 
