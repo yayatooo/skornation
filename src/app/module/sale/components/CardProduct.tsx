@@ -14,8 +14,8 @@ export const CardProduct = () => {
         <Swiper
           breakpoints={{
             350: { slidesPerView: 1.2, spaceBetween: 10 },
-            768: { slidesPerView: 1, spaceBetween: 32 },
-            1024: { slidesPerView: 1.3, spaceBetween: 26 },
+            768: { slidesPerView: 2.5, spaceBetween: 32 },
+            1024: { slidesPerView: 3, spaceBetween: 26 },
           }}
           loop={false}
         >

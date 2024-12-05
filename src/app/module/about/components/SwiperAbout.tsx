@@ -17,11 +17,11 @@ export const SwiperAbout = () => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2.3,
               spaceBetween: 32,
             },
             1024: {
-              slidesPerView: 1.3,
+              slidesPerView: 2.3,
               spaceBetween: 26,
             },
           }}

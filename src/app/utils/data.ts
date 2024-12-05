@@ -155,3 +155,10 @@ export const CardModel = [
     image: "/assets/model-4.png",
   },
 ];
+
+
+export const getInspired = [
+  {
+
+  },
+] 

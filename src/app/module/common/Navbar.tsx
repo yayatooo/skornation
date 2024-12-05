@@ -15,20 +15,22 @@ export const Navbar = () => {
   return (
     <>
       <SideMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <nav className="flex justify-between items-center p-3 shadow-sm">
-        <div>
-          <Menu onClick={handleOpenMenu} />
-        </div>
-        <div>
-          <Image
-            src="/assets/skor-logo-navbar.png"
-            width={62}
-            height={30}
-            alt="navbar logo"
-          />
-        </div>
-        <div>
-          <DropdownSwitch />
+      <nav className="p-3 shadow-sm">
+        <div className="w-10/12 mx-auto flex justify-between items-center ">
+          <div>
+            <Menu onClick={handleOpenMenu} />
+          </div>
+          <div>
+            <Image
+              src="/assets/skor-logo-navbar.png"
+              width={62}
+              height={30}
+              alt="navbar logo"
+            />
+          </div>
+          <div>
+            <DropdownSwitch />
+          </div>
         </div>
       </nav>
     </>

@@ -12,8 +12,8 @@ export const CardCollection = () => {
     <Swiper
       breakpoints={{
         350: { slidesPerView: 1.2, spaceBetween: 10 },
-        768: { slidesPerView: 1, spaceBetween: 32 },
-        1024: { slidesPerView: 1.3, spaceBetween: 26 },
+        768: { slidesPerView: 3, spaceBetween: 10 },
+        1024: { slidesPerView: 3, spaceBetween: 12 },
       }}
       loop={false}
       className="relative w-10/12 h-full"

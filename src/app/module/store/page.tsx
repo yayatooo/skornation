@@ -15,7 +15,7 @@ export default function StorePage() {
           All the categories you need are in the SKOR which is ready to provide
           products according to your needs
         </DescriptionHeading>
-        <div className="w-[345px] h-[405px] bg-darkThird mt-2 mb-8"></div>
+        <div className="w-full h-[405px] bg-darkThird mt-2 mb-8"></div>
         <div className="flex justify-center gap-8 py-8 border-y-2 border-darkThird">
           <Facebook />
           <Instagram />

@@ -63,6 +63,10 @@ export default {
 			redPrimary: "#ec2332",
 			graySecondary: "#d9d9d9",
 			darkThird: "#333333",
+		},
+		screens : {
+			mini: "490px",
+			Ipad: "570px"
 		}
   	}
   },
