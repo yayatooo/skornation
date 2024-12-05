@@ -10,14 +10,14 @@ import { ArrowRight } from "lucide-react";
 export const CardProduct = () => {
   return (
     <section className="pt-4">
-      <div className="py-8 flex gap-8 justify-end">
         <Swiper
           breakpoints={{
-            350: { slidesPerView: 1.2, spaceBetween: 10 },
+            350: { slidesPerView: 1.3, spaceBetween: 10 },
             768: { slidesPerView: 2.5, spaceBetween: 32 },
-            1024: { slidesPerView: 3, spaceBetween: 26 },
+            1024: { slidesPerView: 3.5, spaceBetween: 10 },
           }}
           loop={false}
+          className="relative w-11/12 h-full float-right"
         >
           {ProductsDummy.map((item) => (
             <SwiperSlide key={item.id}>
@@ -40,7 +40,6 @@ export const CardProduct = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </section>
   );
 };

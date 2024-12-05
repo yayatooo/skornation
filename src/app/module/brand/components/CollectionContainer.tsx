@@ -15,13 +15,13 @@ export const CollectionContainer = () => {
             tailored to your needs.
           </DescriptionHeading>
         </div>
-        <div className="flex justify-center gap-4 pt-6">
+        <div className="flex gap-4 pt-6">
           <Button>Men&lsquo;s</Button>
           <Button variant="outline">Women</Button>
         </div>
       </section>
       <div className="pt-0 pb-4 flex justify-end w-full">
-        <div className="w-11/12">
+        <div className="w-full">
           <CardCollection />
         </div>
       </div>

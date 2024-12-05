@@ -6,10 +6,10 @@ import { CardBrands } from "./CardBrands";
 export const BrandContainer = () => {
   return (
     <>
-      <section className="w-10/12 mx-auto pt-8">
+      <div className="pb-8">
+      <section className="w-10/12 mx-auto pt-52">
         <TittleHeading>Brands You Love</TittleHeading>
       </section>
-      <div className="pb-8">
         <div className="flex">
           {Brands.map((item) => (
             <CardBrands
