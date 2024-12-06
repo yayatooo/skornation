@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Facebook, Instagram, Send } from "lucide-react";
 import { Address } from "./components/Address";
 import { Promo } from "./components/Promo";
-import { getInspired } from "@/app/utils/data";
 
 export default function StorePage() {
   return (
