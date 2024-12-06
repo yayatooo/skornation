@@ -15,7 +15,8 @@ export const Navbar = () => {
   return (
     <>
       <SideMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <nav className="bg-white sticky top-0 p-3 shadow-sm z-40">
+      <nav className="bg-white sticky top-[36px] m-0 z-20 w-full p-3 shadow-sm">
+        
         <div className="w-10/12 mx-auto flex justify-between items-center ">
           <div>
             <Menu onClick={handleOpenMenu} />

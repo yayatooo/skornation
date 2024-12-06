@@ -22,13 +22,15 @@ export const CardCollection = () => {
       {CardModel.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="relative w-full h-[289px]">
-            <Image 
-              src={item.image} 
-              fill 
-              alt={item.title} 
-              className="object-cover" 
-              priority 
-            />
+            <div className="flex justify-center items-center">
+              <Image
+                src={item.image}
+                fill
+                alt={item.title}
+                className="object-cover"
+                priority
+              />
+            </div>
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4">
               <h1 className="font-semibold text-lg text-white">{item.title}</h1>
               <button className="mt-2 flex items-center gap-2 text-sm text-white hover:underline">
