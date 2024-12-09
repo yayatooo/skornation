@@ -18,7 +18,7 @@ export default function StorePage() {
         <DescriptionHeading>
          {t('Description')}
         </DescriptionHeading>
-        <div className="w-full max-w-6xl mx-auto flex flex-col h-[405px] mt-2 mb-8">
+        <div className="w-full max-w-6xl mx-auto flex flex-col h-[405px] my-6">
           <div className="flex gap-x-2 justify-center items-center">
             {[
               { src: "/assets/inspired-2.png", width: 170, height: 170 },

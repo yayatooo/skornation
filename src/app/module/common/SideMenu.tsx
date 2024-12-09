@@ -17,12 +17,12 @@ export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
   return (
     <div
       className={clsx(
-        "fixed inset-0 z-50 h-screen w-8/12 bg-redPrimary text-center py-20 text-xl font-semibold text-white flex flex-col lg:hidden transition-all",
+        "fixed inset-0 z-50 h-screen w-8/12 bg-white text-center py-20 text-xl font-semibold text-redPrimary flex flex-col lg:hidden transition-all",
         openMenu ? "left-0" : "-left-[200%]"
       )}
     >
       {/* Close Button */}
-      <div className="absolute top-10 left-8">
+      <div className="absolute top-14 left-14">
         <X onClick={handleCloseMenu} />
       </div>
 

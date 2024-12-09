@@ -1,6 +1,7 @@
 {
   "AboutPage": {
     "Head": "FIND YOUR",
+    "Head2": "GREATNESS",
     "Title": "Explore Our Store",
     "Description": "To become the go-to destination for sports products, synonymous with quality, innovation, and customer satisfaction."
   },
@@ -23,6 +24,11 @@
   "GetInspiredPage": {
     "Title": "Get Inspired",
     "Description": "All the categories you need are in the SKOR which is ready to provide products according to your needs"
+  },
+  "PromoPage": {
+    "Title": "JOIN & SUBSCRIBE GET 10% OFF",
+    "Button": "Sign up for Free"
   }
+  
   
 }

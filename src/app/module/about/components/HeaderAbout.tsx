@@ -11,14 +11,7 @@ export const HeaderAbout = () => {
       <div className="w-10/12 mx-auto flex items-center justify-between">
         <div className="text-white">
           <h1 className="font-bold text-2xl">{t('Head')}</h1>
-          <div className="">
-            <Image
-              src="/assets/greatness.png"
-              width={150}
-              height={29}
-              alt="word"
-            />
-          </div>
+          <h1 className="font-bold text-2xl">{t('Head2')}</h1>
         </div>
         <div>
           <Image
