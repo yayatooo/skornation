@@ -9,7 +9,7 @@ import { Promo } from "./components/Promo";
 export default function StorePage() {
   return (
     <>
-      <section className="py-10 w-10/12 mx-auto">
+      <section className="py-10 mt-64 w-10/12 mx-auto">
         <TittleHeading>Get Inspired</TittleHeading>
         <DescriptionHeading>
           All the categories you need are in the SKOR which is ready to provide
