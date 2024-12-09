@@ -5,15 +5,18 @@ import Image from "next/image";
 import { Facebook, Instagram, Send } from "lucide-react";
 import { Address } from "./components/Address";
 import { Promo } from "./components/Promo";
+import { useTranslations } from "next-intl";
 
 export default function StorePage() {
+
+  const t = useTranslations('GetInspiredPage')
+
   return (
     <>
       <section className="py-10 mt-64 w-10/12 mx-auto">
-        <TittleHeading>Get Inspired</TittleHeading>
+        <TittleHeading>{t('Title')}</TittleHeading>
         <DescriptionHeading>
-          All the categories you need are in the SKOR which is ready to provide
-          products according to your needs
+         {t('Description')}
         </DescriptionHeading>
         <div className="w-full max-w-6xl mx-auto flex flex-col h-[405px] mt-2 mb-8">
           <div className="flex gap-x-2 justify-center items-center">

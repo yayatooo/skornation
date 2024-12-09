@@ -1,9 +1,13 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CircleArrowRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export const GalleryStore = () => {
+
+  const t = useTranslations('SalePage')
+
   return (
     <section className="bg-redPrimary">
         <div className="w-10/12 mx-auto flex justify-between items-center">
@@ -21,10 +25,7 @@ export const GalleryStore = () => {
         </div>
         <div>
           <p className="text-white font-medium text-sm w-10/12 mx-auto pb-4">
-            Bold Lifestyle is a newly established multi-brandsports company,
-            operating the store SKOR, thatseamlessly blends performance with
-            lifestyle. We arededicated to providing high-quality sports
-            appareland lifestyle products.
+            {t('Description')}
           </p>
         </div>
         <div className="flex gap-x-2 gap-y-4 py-2 justify-between">
@@ -47,7 +48,7 @@ export const GalleryStore = () => {
         </div>
         <div className="py-4 flex justify-center">
           <Button>
-            Discover More <ArrowRight className="text-redPrimary" />
+            {t('Button')} <ArrowRight className="text-redPrimary" />
           </Button>
         </div>
       </section>

@@ -1,12 +1,16 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 export const HeaderAbout = () => {
+
+  const t = useTranslations('AboutPage')
+
   return (
     <section className="bg-redPrimary pt-6 h-[213px] lg:h-[320px]">
       <div className="w-10/12 mx-auto flex items-center justify-between">
         <div className="text-white">
-          <h1 className="font-bold text-2xl">FIND YOUR</h1>
+          <h1 className="font-bold text-2xl">{t('Head')}</h1>
           <div className="">
             <Image
               src="/assets/greatness.png"
