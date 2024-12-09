@@ -7,18 +7,15 @@ export const metadata: Metadata = {
   title: "SKORNATION"
 };
 
-export default function RootLayout({
-    children,
-    params: { locale }
-  }: Readonly<{
-    children: React.ReactNode;
-    params: { locale: string };
-  }>) {
+interface LayoutProps {
+  children: React.ReactNode;
+
+}
+
+export default function RootLayout({ children}: LayoutProps) {
   return (
-    <html lang={locale}>
-      <body className={MavenPro.className}>
-        {children}
-      </body>
+    <html>
+      <body className={MavenPro.className}>{children}</body>
     </html>
   );
 }
