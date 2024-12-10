@@ -28,7 +28,7 @@ export const PromoDropDown = () => {
       </section>
       <div
         className={clsx(
-          "fixed z-30 bg-white h-[50vh] p-8 mt-8 transition-all",
+          "fixed z-30 bg-white h-[50vh] w-full p-8 mt-8 transition-all",
           openDropDown ? "top-0" : "-top-[200%]"
         )}
       >

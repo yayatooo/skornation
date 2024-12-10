@@ -24,7 +24,7 @@ export const GalleryStore = () => {
           </div>
         </div>
         <div>
-          <p className="text-white font-medium text-sm w-10/12 mx-auto pb-4">
+          <p className="text-white font-medium text-sm lg:text-xl w-10/12 mx-auto pb-4">
             {t('Description')}
           </p>
         </div>

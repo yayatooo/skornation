@@ -19,8 +19,8 @@ export const CardBrands = ({
   height,
 }: BrandCardProps) => {
   return (
-    <div className="w-4/12 h-[98px] flex justify-center items-center bg-black mt-4" key={id}>
-      <div>
+    <div className="w-full flex justify-center bg-black mt-4" key={id}>
+      <div className="w-full lg:w-6/12 h-[98px] flex justify-center items-center">
         <Image src={logo} width={width} height={height} alt="logo" className="object-cover" />
       </div>
     </div>

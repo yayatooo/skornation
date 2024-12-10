@@ -16,7 +16,7 @@ export const SwiperAbout = () => {
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.3,
+            slidesPerView: 2.1,
             spaceBetween: 32,
           },
           1024: {
@@ -30,7 +30,7 @@ export const SwiperAbout = () => {
       >
         {GallerySlide.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="relative h-[211px] overflow-hidden w-full ">
+            <div className="relative h-[211px] sm:h-[380px] overflow-hidden w-full ">
               <Image
                 src={item.image}
                 alt={item.title}

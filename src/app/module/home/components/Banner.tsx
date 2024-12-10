@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const Banner = () => {
   return (
-    <section className="w-full h-[300px]" id="home">
+    <section className="w-full h-[300px] sm:h-[500px]" id="home">
       <div className="w-full h-full">
         <Swiper
           modules={[Autoplay]}
@@ -38,7 +38,7 @@ export const Banner = () => {
           
           {BannerSlide.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="relative h-[300px] overflow-hidden w-full ">
+              <div className="relative h-[300px] sm:h-[500px] overflow-hidden w-full ">
                 <Image
                   src={item.image}
                   alt={item.title}

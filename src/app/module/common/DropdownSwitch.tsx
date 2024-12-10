@@ -28,7 +28,7 @@ export const DropdownSwitch = () => {
   return (
     <Select defaultValue={localActive} disabled={isPending} onValueChange={onSelectChange}>
       <SelectTrigger className="w-[37px]">
-        <SelectValue placeholder="Select a fruit" />
+        <SelectValue placeholder="Select Language" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
