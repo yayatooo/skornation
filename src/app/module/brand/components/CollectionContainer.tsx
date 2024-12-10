@@ -19,7 +19,7 @@ export const CollectionContainer = () => {
           </DescriptionHeading>
         </div>
         <div className="flex gap-4 pt-6">
-          <Button>{t('genderM')}</Button>
+          <Button className="px-7">{t('genderM')}</Button>
           <Button variant="outline">{t('genderF')}</Button>
         </div>
       </section>

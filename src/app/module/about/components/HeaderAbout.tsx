@@ -7,7 +7,7 @@ export const HeaderAbout = () => {
   const t = useTranslations('AboutPage')
 
   return (
-    <section className="bg-redPrimary pt-6 h-[213px] lg:h-[350px]" id="about">
+    <section className="bg-redPrimary pt-6 h-[213px] sm:h-[350px]" id="about">
       <div className="w-10/12 mx-auto flex items-center justify-between">
         <div className="text-white">
           <h1 className="font-bold text-2xl lg:text-5xl">{t('Head')}</h1>

@@ -12,7 +12,7 @@ export default function StorePage() {
 
   return (
     <>
-      <section className="py-10 mt-72 w-10/12 mx-auto">
+      <section className="py-10 mt-[20rem] w-10/12 mx-auto">
         <TittleHeading>{t("Title")}</TittleHeading>
         <DescriptionHeading>{t("Description")}</DescriptionHeading>
         <GalleryInspired />

@@ -11,7 +11,7 @@ export const GalleryInspired = () => {
         ].map((image, index) => (
           <div
             key={index}
-            className="relative w-[170px] h-[170px] sm:w-[310px] sm:h-[310px] lg:w-6/12 lg:h-[30vh]"
+            className="relative w-[170px] h-[170px] sm:w-full sm:h-[310px] lg:w-6/12 lg:h-[30vh]"
           >
             <Image
               src={image.src}
@@ -24,7 +24,7 @@ export const GalleryInspired = () => {
       </div>
       <div>
         <div className="flex justify-center mt-2">
-          <div className="relative w-[345px] h-[320px] sm:w-[620px] sm:h-[455px] lg:w-full lg:h-[40vh]">
+          <div className="relative w-[345px] h-[320px] sm:w-full sm:h-[455px] lg:w-full lg:h-[40vh]">
             <Image
               src="/assets/inspired-1.png"
               fill

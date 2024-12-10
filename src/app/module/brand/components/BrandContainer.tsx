@@ -11,7 +11,7 @@ export const BrandContainer = () => {
   return (
     <>
       <div className="py-8" id="brand">
-      <section className="w-10/12 mx-auto pt-52">
+      <section className="w-10/12 mx-auto pt-52 sm:mt-44">
         <TittleHeading>{t('Title')}</TittleHeading>
       </section>
         <div className="flex">

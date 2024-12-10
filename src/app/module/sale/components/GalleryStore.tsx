@@ -28,7 +28,7 @@ export const GalleryStore = () => {
             {t('Description')}
           </p>
         </div>
-        <div className="flex gap-x-2 gap-y-4 py-2 justify-between">
+        <div className="flex w-10/12 mx-auto gap-x-2 gap-y-4 py-2 justify-between">
           <div>
             <Image
               src="/assets/gallery-3.png"
@@ -46,7 +46,7 @@ export const GalleryStore = () => {
             />
           </div>
         </div>
-        <div className="py-4 flex justify-center">
+        <div className="py-8 flex justify-center">
           <Button>
             {t('Button')} <ArrowRight className="text-redPrimary" />
           </Button>
