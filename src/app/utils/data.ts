@@ -2,58 +2,58 @@ export const Navlink = [
   {
     id: 1,
     name: "Home",
-    href: "/",
+    href: "home",
   },
   {
     id: 2,
     name: "About",
-    href: "/about",
+    href: "about",
   },
   {
     id: 3,
     name: "Brands",
-    href: "/brand",
+    href: "brand",
   },
   {
     id: 4,
     name: "Sale",
-    href: "/sale",
+    href: "sale",
   },
   {
     id: 5,
     name: "Store",
-    href: "/store",
+    href: "store",
   },
 ];
 
 export const ProductsDummy = [
   {
     id: 1,
-    title: "Nike Dunk Low  Retro",
+    title: "Nike Zoom Vomero 5 Khaki",
     genderCategory: "Men's",
     image: "/assets/product-1.png",
   },
   {
     id: 2,
-    title: "Nike Dunk Low  Retro",
+    title: "Nike Zoom Vomero 5 White",
     genderCategory: "Women's",
     image: "/assets/product-2.png",
   },
   {
     id: 3,
-    title: "Nike Dunk Low  Retro",
+    title: "Nike Zoom Vomero 5 Black",
     genderCategory: "Unisex",
     image: "/assets/product-3.png",
   },
   {
     id: 4,
-    title: "Nike Dunk Low  Retro",
+    title: "Nike Zoom Vomero 5 Cream",
     genderCategory: "Women's",
     image: "/assets/product-4.png",
   },
   {
     id: 5,
-    title: "Nike Dunk Low  Retro",
+    title: "Nike Zoom Vomero 5 Red",
     genderCategory: "Men's",
     image: "/assets/product-5.png",
   },

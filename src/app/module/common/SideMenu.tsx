@@ -1,19 +1,29 @@
-import { Navlink } from '@/app/utils/data'
-import clsx from 'clsx'
-import { Facebook, Instagram, Send, X } from 'lucide-react'
-import Link from 'next/link'
-import React from 'react'
-
+import { Navlink } from "@/app/utils/data";
+import clsx from "clsx";
+import { Facebook, Instagram, Send, X } from "lucide-react";
+import React from "react";
 
 interface SidebarProps {
-    openMenu: boolean;
-    setOpenMenu: (isOpen: boolean) => void;
-  }
+  openMenu: boolean;
+  setOpenMenu: (isOpen: boolean) => void;
+}
 
 export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
-    const handleCloseMenu = () => {
-        setOpenMenu(false);
-      };
+  const handleCloseMenu = () => {
+    setOpenMenu(false);
+  };
+
+  const scrollToSection = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      handleCloseMenu();
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div
       className={clsx(
@@ -30,17 +40,24 @@ export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
       <div className="flex-grow flex flex-col items-center justify-center space-y-6">
         {Navlink.map((item) => (
           <div key={item.id}>
-            <Link href={item.href}>{item.name}</Link>
+            <button
+              onClick={() => scrollToSection(item.href.replace("#", ""))}
+              className="hover:text-red-700 transition-colors"
+            >
+              {item.name}
+            </button>
           </div>
         ))}
       </div>
-      
+
       {/* Social Media Icons */}
       <div className="flex gap-6 justify-center mt-auto pb-6">
-       <Facebook />
-       <Instagram />
-       <Send />
+        <Facebook />
+        <Instagram />
+        <Send />
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default SideMenu;

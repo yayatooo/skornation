@@ -9,7 +9,7 @@ export const GalleryStore = () => {
   const t = useTranslations('SalePage')
 
   return (
-    <section className="bg-redPrimary">
+    <section className="bg-redPrimary" id='sale'>
         <div className="w-10/12 mx-auto flex justify-between items-center">
           <div className="pt-4">
             <Image

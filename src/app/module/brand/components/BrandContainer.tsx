@@ -10,7 +10,7 @@ export const BrandContainer = () => {
 
   return (
     <>
-      <div className="py-8">
+      <div className="py-8" id="brand">
       <section className="w-10/12 mx-auto pt-52">
         <TittleHeading>{t('Title')}</TittleHeading>
       </section>

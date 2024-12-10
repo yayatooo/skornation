@@ -5,7 +5,7 @@ import React from 'react'
 export const Address = () => {
   return (
     <section>
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="store">
       <Image
         src="/assets/outline.svg"
         width={243}

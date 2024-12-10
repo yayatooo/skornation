@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const Banner = () => {
   return (
-    <section className="w-full h-[300px]">
+    <section className="w-full h-[300px]" id="home">
       <div className="w-full h-full">
         <Swiper
           modules={[Autoplay]}
