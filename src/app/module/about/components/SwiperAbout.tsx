@@ -24,18 +24,19 @@ export const SwiperAbout = () => {
             spaceBetween: 26,
           },
         }}
-        loop={false}
-        centeredSlides={false}
-        className="relative w-11/12 h-full float-right"
+        loop={true}
+        centeredSlides={true}
+        className="w-full h-full"
       >
         {GallerySlide.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="relative h-[211px] sm:h-[380px] overflow-hidden w-full ">
+            <div className="h-auto overflow-hidden w-full ">
               <Image
                 src={item.image}
                 alt={item.title}
-                fill
-                className="object-cover"
+                width={611}
+                height={401}
+                className="object-cover w-full h-auto"
               />
             </div>
           </SwiperSlide>

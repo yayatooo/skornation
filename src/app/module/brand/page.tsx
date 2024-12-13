@@ -4,8 +4,10 @@ import { CollectionContainer } from "./components/CollectionContainer";
 export default function BrandPage() {
   return (
     <>
-      <BrandContainer />
-      <CollectionContainer />
+      <div className="py-0 lg:pb-16">
+        <BrandContainer />
+        <CollectionContainer />
+      </div>
     </>
   );
 }

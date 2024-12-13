@@ -28,10 +28,12 @@ export const PromoDropDown = () => {
         className="bg-redPrimary sticky top-0 z-40 w-full py-2"
         onClick={handleDropDown}
       >
-        <div className="flex justify-center items-center text-white font-bold">
-          <p className=" text-sm">SAVE UP TO 50% OFF + FREE SHIPPING</p>
-          <div>
-            <ChevronDown size={16} />
+        <div className="w-10/12 mx-auto">
+          <div className="flex justify-center items-center text-white font-bold">
+            <p className=" text-sm">SAVE UP TO 50% OFF + FREE SHIPPING</p>
+            <div>
+              <ChevronDown size={16} />
+            </div>
           </div>
         </div>
       </section>

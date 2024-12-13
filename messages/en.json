@@ -1,22 +1,23 @@
 {
   "AboutPage": {
-    "Head": "FIND YOUR",
-    "Head2": "GREATNESS",
+    "Head": "Together we are unstoppable",
     "Title": "Explore Our Store",
     "Description": "To become the go-to destination for sports products, synonymous with quality, innovation, and customer satisfaction."
   },
   "BrandPage": {
-    "Title": "Brands You Love"
+    "Title": "Our Brands"
   },
   "CollectionPage": {
-    "Title": "Our Collection",
-    "Description": "All the categories you need are in SKOR, ready to provide products tailored to your needs.",
+    "Title": "Our Product",
+    "Title2" : "Our Category",
+    "Description": "We offer a diverse selection of products designed for both performance and lifestyle needs, ensuring you have the right gear for every activity.",
     "genderM": "Men",
     "genderF": "Women"
   },
   "SalePage": {
     "Button": "Discover More",
-    "Description": "Bold Lifestyle is a newly established multi-brandsports company, operating the store SKOR, thatseamlessly blends performance with lifestyle. We arededicated to providing high-quality sports appareland lifestyle products."
+    "Description": "Bold Lifestyle is a newly established multi-brandsports company, operating the store SKOR, thatseamlessly blends performance with lifestyle. We arededicated to providing high-quality sports appareland lifestyle products.",
+    "SubDescription" : "Our mission is to inspire athletes and active individuals of all levels by offering a diverse range of stylish and functional products from leading brands."
   },
   "ProductPage": {
     "Title": "Top Rated Product"

@@ -36,7 +36,8 @@ export const Navbar = () => {
             <Link href="/">
               <Image
                 src="/assets/skor-logo-navbar.png"
-                fill
+                width={82}
+                height={40}
                 alt="navbar logo"
               />
             </Link>

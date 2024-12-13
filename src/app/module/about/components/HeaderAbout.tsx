@@ -3,35 +3,35 @@ import Image from "next/image";
 import React from "react";
 
 export const HeaderAbout = () => {
-
-  const t = useTranslations('AboutPage')
+  const t = useTranslations("AboutPage");
 
   return (
-    <section className="bg-redPrimary pt-6 h-[213px] sm:h-[350px]" id="about">
-      <div className="w-10/12 mx-auto flex items-center justify-between">
+    <section className="bg-redPrimary pt-4 " id="about">
+      <div className="w-10/12 mx-auto">
         <div className="text-white">
-          <h1 className="font-bold text-2xl lg:text-5xl">{t('Head')}</h1>
-          <h1 className="font-bold text-2xl lg:text-5xl">{t('Head2')}</h1>
+          <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl text-center uppercase">
+            “{t('Head')}”{" "}
+          </h1>
         </div>
-        <div className="w-[93px] h-[38px] lg:w-[200px] lg:h-[80px] relative">
-          <Image
-            src="/assets/logo-white.png"
-            fill={true}
-            // sizes="(max-width: 1024px) 120rem, 40vh"
-            alt="about"
-          />
+
+        <div className=" py-4 w-full flex justify-center">
+          <div className="w-[345px] h-auto lg:w-[620px] lg:h-[420px] ">
+            <Image
+              src="/assets/about-img.png"
+              alt="about"
+              width={620}
+              height={420}
+            />
+          </div>
         </div>
       </div>
-      <div className="relative py-3 w-full flex justify-center">
-        <div className="w-10/12 max-w-screen-md">
-          <Image
-            src="/assets/about-img.png"
-            alt="about"
-            layout="responsive"
-            width={345}
-            height={211}
-          />
-        </div>
+      <div className="relative w-full h-2">
+        <Image
+          src="/assets/bottom-header-about.svg"
+          alt="fill"
+          fill
+          className="object-cover"
+        />
       </div>
     </section>
   );

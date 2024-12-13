@@ -4,6 +4,6 @@ import React from 'react'
 
 export const DescriptionHeading:React.FC<ChildrenProps> = ({children}) => {
   return (
-    <p className='text-sm font-medium lg:text-2xl'>{children}</p>
+    <p className='text-sm font-medium py-2 lg:text-2xl'>{children}</p>
   )
 }

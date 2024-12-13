@@ -16,7 +16,7 @@ export const CardProduct = () => {
             490: { slidesPerView: 1.7, spaceBetween: 10 },
             650: { slidesPerView: 2.1, spaceBetween: 10 },
             750: { slidesPerView: 2.5, spaceBetween: 32 },
-            1024: { slidesPerView: 3.1, spaceBetween: 10 },
+            1024: { slidesPerView: 4, spaceBetween: 10 },
           }}
           loop={false}
           className="relative w-11/12 h-full float-right"

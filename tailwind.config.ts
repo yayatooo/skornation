@@ -66,8 +66,8 @@ export default {
 		},
 		screens : {
 			mini: "450px",
-			Ipad: "510px",
-			Ipad2:"520px"
+			ipad: "550px",
+			tablet:"570px"
 		}
   	}
   },

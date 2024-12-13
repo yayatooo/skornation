@@ -16,12 +16,12 @@ export const CardCollection = () => {
         768: { slidesPerView: 3, spaceBetween: 10 },
         1024: { slidesPerView: 3, spaceBetween: 12 },
       }}
-      loop={false}
-      className="relative w-11/12 h-full float-right"
+      loop={true}
+      className="w-11/12 h-full"
     >
       {CardModel.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="relative w-full h-[289px]">
+          <div className="relative w-full h-[289px] lg:h-[540px]">
             <div className="flex justify-center items-center">
               <Image
                 src={item.image}

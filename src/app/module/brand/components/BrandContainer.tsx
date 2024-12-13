@@ -10,11 +10,11 @@ export const BrandContainer = () => {
 
   return (
     <>
-      <div className="py-8" id="brand">
-      <section className="w-10/12 mx-auto pt-52 sm:mt-44">
+      <div className="py-4" id="brand">
+      <section className="w-10/12 mx-auto text-center lg:text-start py-2">
         <TittleHeading>{t('Title')}</TittleHeading>
       </section>
-        <div className="flex">
+        <div className="flex w-10/12 mx-auto">
           {Brands.map((item) => (
             <CardBrands
               key={item.id}

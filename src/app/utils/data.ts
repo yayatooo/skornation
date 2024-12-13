@@ -111,8 +111,8 @@ export const Brands = [
     title: "On",
     image: "/assets/brand-model-2.jpg",
     logo: "/assets/brand-2.png",
-    width: 31,
-    height: 60,
+    width: 21,
+    height: 40,
     
   },
   {
@@ -120,16 +120,24 @@ export const Brands = [
     title: "Nike",
     image: "/assets/brand-model-1.jpg",
     logo: "/assets/brand-1.png",
-    width: 110,
-    height: 42,
+    width: 70,
+    height: 32,
   },
   {
     id: 3,
     title: "Santa Cruz",
     image: "/assets/brand-model-3.jpg",
     logo: "/assets/brand-3.png",
-    width: 67,
-    height: 64,
+    width: 47,
+    height: 44,
+  },
+  {
+    id: 4,
+    title: "K-Swiss",
+    image: "/assets/brand-model-3.jpg",
+    logo: "/assets/brand-4.png",
+    width: 47,
+    height: 44,
   },
 ];
 

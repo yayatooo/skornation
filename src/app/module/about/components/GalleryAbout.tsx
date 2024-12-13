@@ -10,8 +10,9 @@ export const GalleryAbout = () => {
   const t = useTranslations('AboutPage')
 
   return (
-    <section className="pt-28 sm:pt-52">
-      <div className="w-10/12 mx-auto pt-4">
+    // <section className="pt-28 mini:pt-44 ipad:pt-48 tablet:pt-52">
+    <section>
+      <div className="w-10/12 text-center lg:text-start flex flex-col justify-end mx-auto py-4">
         <TittleHeading>{t('Title')}</TittleHeading>
         <DescriptionHeading>
           {t('Description')}
