@@ -9,8 +9,8 @@ export default function LocalePage() {
   return (
     <>
       <HomePage />
-      <AboutPage />
       <BrandPage />
+      <AboutPage />
       <SalePage />
       <StorePage />
     </>

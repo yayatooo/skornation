@@ -10,8 +10,8 @@ export const BrandContainer = () => {
 
   return (
     <>
-      <div className="py-4" id="brand">
-      <section className="w-10/12 mx-auto text-center lg:text-start py-2">
+      <div className="py-4 xl:py-12" id="brand">
+      <section className="w-10/12 mx-auto text-center lg:text-start py-2 xl:py-4">
         <TittleHeading>{t('Title')}</TittleHeading>
       </section>
         <div className="flex w-10/12 mx-auto">

@@ -5,17 +5,17 @@ import React from 'react'
 export const Address = () => {
   return (
     <section>
-    <div className="flex justify-center" id="store">
+    <div className="flex w-10/12 mx-auto justify-center" id="store">
       <Image
         src="/assets/outline.svg"
-        width={243}
-        height={152}
+        width={500}
+        height={500}
         alt="store"
       />
     </div>
     <div className="flex justify-center pt-4">
       <MapPin className="text-redPrimary" /> 
-      <h1 className="font-extrabold">SKOR CAMBODIA</h1>
+      <h1 className="font-extrabold cursor-pointer">SKOR CAMBODIA</h1>
     </div>
     <div className="font-medium text-sm text-center pb-4">
         <p>443A Preah Monivong Blvd (93) Phnom Penh, Cambodia</p>

@@ -10,12 +10,11 @@
   "CollectionPage": {
     "Title": "Our Product",
     "Title2" : "Our Category",
-    "Description": "We offer a diverse selection of products designed for both performance and lifestyle needs, ensuring you have the right gear for every activity.",
-    "genderM": "Men",
-    "genderF": "Women"
+    "Description": "We offer a diverse selection of products designed for both performance and lifestyle needs, ensuring you have the right gear for every activity."
+
   },
   "SalePage": {
-    "Button": "Discover More",
+    "Title": "Our Story",
     "Description": "Bold Lifestyle is a newly established multi-brandsports company, operating the store SKOR, thatseamlessly blends performance with lifestyle. We arededicated to providing high-quality sports appareland lifestyle products.",
     "SubDescription" : "Our mission is to inspire athletes and active individuals of all levels by offering a diverse range of stylish and functional products from leading brands."
   },
@@ -23,8 +22,8 @@
     "Title": "Top Rated Product"
   },
   "GetInspiredPage": {
-    "Title": "Get Inspired",
-    "Description": "All the categories you need are in the SKOR which is ready to provide products according to your needs"
+    "Title": "Love by People",
+    "Description": "Here's what some of our users have to say about SKOR"
   },
   "PromoPage": {
     "Title": "JOIN & SUBSCRIBE GET 10% OFF",

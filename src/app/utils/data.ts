@@ -188,3 +188,37 @@ export const getInspired = [
     height: 230
   },
 ] 
+
+
+export const Reviews = [
+  {
+    id: 1,
+    user: "Siv Im Hok",
+    rating: 5,
+    comment : "Consider as one of the greatest place to shop for lifestyle.They got multi brand here like Nike and On. The space is huge, and if you’re into street concept, I think here’s right for you"
+  },
+  {
+    id: 2,
+    user: "Bunvirak Seng",
+    rating: 5,
+    comment : "Official Nike Partner in Cambodia Official Nike&On Distributor to Cambodia"
+  },
+  {
+    id: 3,
+    user: "LYMIN HONG",
+    rating: 5,
+    comment : "The biggest multi brand store in Cambodia."
+  },
+  {
+    id: 4,
+    user: "Clara Nouth",
+    rating: 5,
+    comment : "NIKE Official store in Cambodia"
+  },
+  {
+    id: 5,
+    user: "Chankrisna Kith",
+    rating: 5,
+    comment : "Best sport experience. #Nike"
+  },
+]

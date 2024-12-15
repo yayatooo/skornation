@@ -17,7 +17,7 @@ export const CardCollection = () => {
         1024: { slidesPerView: 3, spaceBetween: 12 },
       }}
       loop={true}
-      className="w-11/12 h-full"
+      className="w-10/12 h-full"
     >
       {CardModel.map((item) => (
         <SwiperSlide key={item.id}>

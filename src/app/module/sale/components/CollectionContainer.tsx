@@ -15,7 +15,7 @@ export const CollectionContainer = () => {
           <TittleHeading>{t("Title")}</TittleHeading>
           <DescriptionHeading>{t("Description")}</DescriptionHeading>
         </div>
-        <div className="flex flex-col lg:flex-row lg:items-center gap-2">
+        <div className="flex flex-col lg:items-center gap-2 mb-12">
           <CollectionCard
             title="Apparel"
             desc="T-Shirt, Polo Shirt, Tank Top, Crop Top, Sport Bra, Pants, Shorts, Skirt, Jacket, Hoodie, Sweatshirt, Swimsuit, Jammer"
@@ -35,7 +35,7 @@ export const CollectionContainer = () => {
       </section>
       <div className="py-6 flex justify-end w-full">
         <div className="w-full bg-darkThird pb-6">
-          <h1 className="py-4 text-center text-xl lg:text-4xl font-bold text-white">Our Category</h1>
+          <h1 className="py-4 text-center text-xl lg:text-4xl font-bold text-white">{t('Title2')}</h1>
           <CardCollection />
         </div>
       </div>
