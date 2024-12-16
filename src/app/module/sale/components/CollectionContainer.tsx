@@ -35,7 +35,9 @@ export const CollectionContainer = () => {
       </section>
       <div className="py-6 flex justify-end w-full">
         <div className="w-full bg-darkThird pb-6">
-          <h1 className="py-4 text-center text-xl lg:text-4xl font-bold text-white">{t('Title2')}</h1>
+          <h1 className="py-4 text-center text-xl lg:text-4xl font-bold text-white">
+            {t("Title2")}
+          </h1>
           <CardCollection />
         </div>
       </div>

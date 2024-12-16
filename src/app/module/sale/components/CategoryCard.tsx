@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { CardModel } from "@/app/utils/data";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 
 export const CardCollection = () => {
   return (
@@ -17,25 +17,25 @@ export const CardCollection = () => {
         1024: { slidesPerView: 3, spaceBetween: 12 },
       }}
       loop={true}
-      className="w-10/12 h-full"
+      className="w-10/12 mx-auto"
     >
       {CardModel.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="relative w-full h-[289px] lg:h-[540px]">
-            <div className="flex justify-center items-center">
+          <div className="relative w-full aspect-[3/4] max-h-[540px]">
+            <div className="absolute inset-0">
               <Image
                 src={item.image}
-                fill
                 alt={item.title}
+                fill
                 className="object-cover"
+                sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 33vw"
                 priority
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4">
-              <h1 className="font-semibold text-lg text-white">{item.title}</h1>
-              <button className="mt-2 flex items-center gap-2 text-sm text-white hover:underline">
-                Shop Now <ArrowRight size={16} />
-              </button>
+              <h1 className="font-semibold text-base md:text-lg text-white">
+                {item.title}
+              </h1>
             </div>
           </div>
         </SwiperSlide>

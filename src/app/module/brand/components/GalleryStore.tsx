@@ -6,37 +6,31 @@ export const GalleryStore = () => {
   const t = useTranslations("SalePage");
 
   return (
-    <section className="bg-redPrimary py-4 my-4 xl:my-12" id="sale">
-      <div className="w-10/12 mx-auto flex justify-between lg:items-center pb-6">
-        <div className="text-white font-extrabold text-6xl lg:text-9xl">
-          <h1 className="w-6/12">{t("Title")}</h1>
-        </div>
-        <div className="pt-4">
-          <Image
-            src="/assets/bold-logo-white.svg"
-            width={200}
-            height={150}
-            alt="bold"
-          />
-        </div>
-      </div>
-      <div className="flex flex-col lg:flex-row w-full lg:w-10/12 lg:mx-auto">
-        <div className="space-y-4 w-full lg:w-7/12">
-          <p className="text-white font-medium text-sm lg:text-xl w-10/12 mx-auto lg:mx-0">
-            {t("Description")}
-          </p>
-          <p className="text-white font-medium text-sm lg:text-xl w-10/12 mx-auto lg:mx-0">
-            {t("SubDescription")}
-          </p>
-        </div>
+    <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="sale">
+      <div className="md:flex md:items-center lg:items-start gap-8">
         <div className="flex w-10/12 mx-auto py-4 lg:py-0 justify-center">
           <div>
             <Image
-              src="/assets/gallery-3.png"
-              width={760}
-              height={760}
+              src="/assets/gallery-5.png"
+              width={904}
+              height={603}
               alt="gallery"
             />
+          </div>
+        </div>
+        <div className="w-10/12 mx-auto md:w-7/12 md:mx-0">
+          <div className="text-white font-bold text-xl py-4 lg:text-6xl">
+            <h1 className="w-full text-center md:text-start">{t("Title")}</h1>
+          </div>
+          <div className="flex flex-col w-full py-3">
+            <div className="space-y-4 w-full ">
+              <p className="text-white font-medium text-sm lg:text-xl xl:text-2xl">
+                {t("Description")}
+              </p>
+              <p className="text-white font-medium text-sm lg:text-xl xl:text-2xl">
+                {t("SubDescription")}
+              </p>
+            </div>
           </div>
         </div>
       </div>
