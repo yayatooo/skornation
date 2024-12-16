@@ -9,21 +9,25 @@ import Image from "next/image";
 
 export const Banner = () => {
   return (
-    <section className="w-full h-[300px] sm:h-[500px] xl:h-[700px]" id="home">
+    <section className="w-full h-[200px] xl:h-[700px]" id="home">
       <div className="w-full h-full">
         <Swiper
           modules={[Autoplay]}
           breakpoints={{
             350: {
-              slidesPerView: 1,
+              slidesPerView: 1.2,
               spaceBetween: 0,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 1.5,
               spaceBetween: 32,
             },
             1024: {
-              slidesPerView: 1.3,
+              slidesPerView: 1.8,
+              spaceBetween: 10,
+            },
+            1280: {
+              slidesPerView: 1.5,
               spaceBetween: 26,
             },
           }}
@@ -38,7 +42,7 @@ export const Banner = () => {
           
           {BannerSlide.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="relative h-[300px] sm:h-[500px] lg:h-full overflow-hidden w-full ">
+              <div className="w-[1675px] h-[1044px] ">
                 <Image
                   src={item.image}
                   alt={item.title}

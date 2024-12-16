@@ -15,7 +15,7 @@ export const CollectionContainer = () => {
           <TittleHeading>{t("Title")}</TittleHeading>
           <DescriptionHeading>{t("Description")}</DescriptionHeading>
         </div>
-        <div className="flex flex-col lg:items-center gap-2 mb-12">
+        <div className="flex flex-col xl:flex-row lg:items-center gap-2 mb-12">
           <CollectionCard
             title="Apparel"
             desc="T-Shirt, Polo Shirt, Tank Top, Crop Top, Sport Bra, Pants, Shorts, Skirt, Jacket, Hoodie, Sweatshirt, Swimsuit, Jammer"

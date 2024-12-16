@@ -32,17 +32,17 @@ export const Navbar = () => {
           <div className="lg:hidden">
             <Menu onClick={handleOpenMenu} />
           </div>
-          <div className="relative w-[62px] h-[30px] lg:w-[82px] lg:h-[40px]">
+          <div className="relative w-[62px] h-[30px] lg:w-[102px] lg:h-[50px]">
             <Link href="/">
               <Image
                 src="/assets/skor-logo-navbar.png"
-                width={82}
-                height={40}
+                width={102}
+                height={50}
                 alt="navbar logo"
               />
             </Link>
           </div>
-          <div className="hidden lg:flex gap-4 font-semibold">
+          <div className="hidden lg:flex gap-12 font-semibold text-2xl">
             {Navlink.map((item) => (
               <div key={item.id}>
                 <button

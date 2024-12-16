@@ -63,22 +63,22 @@ export const BannerSlide = [
   {
     id: 1,
     title: "cover",
-    image: "/assets/cover-1.png",
+    image: "/assets/cover-3.jpg",
   },
   {
     id: 2,
     title: "cover",
-    image: "/assets/cover-2.png",
+    image: "/assets/cover-3.jpg",
   },
   {
     id: 3,
     title: "cover",
-    image: "/assets/cover-1.png",
+    image: "/assets/cover-3.jpg",
   },
   {
     id: 4,
     title: "cover",
-    image: "/assets/cover-2.png",
+    image: "/assets/cover-3.jpg",
   },
 ];
 
@@ -109,35 +109,35 @@ export const Brands = [
   {
     id: 2,
     title: "On",
-    image: "/assets/brand-model-2.jpg",
+    image: "/assets/bg-brand-3.jpg",
     logo: "/assets/brand-2.png",
-    width: 21,
-    height: 40,
+    width: 80,
+    height: 50,
     
   },
   {
     id: 1,
     title: "Nike",
-    image: "/assets/brand-model-1.jpg",
+    image: "/assets/bg-brand-2.jpg",
     logo: "/assets/brand-1.png",
-    width: 70,
-    height: 32,
+    width: 122,
+    height: 44,
   },
   {
     id: 3,
     title: "Santa Cruz",
-    image: "/assets/brand-model-3.jpg",
+    image: "/assets/bg-brand-1.jpg",
     logo: "/assets/brand-3.png",
-    width: 47,
-    height: 44,
+    width: 120,
+    height: 80,
   },
   {
     id: 4,
     title: "K-Swiss",
-    image: "/assets/brand-model-3.jpg",
+    image: "/assets/bg-brand-4.jpg",
     logo: "/assets/brand-4.png",
-    width: 47,
-    height: 44,
+    width: 120,
+    height: 80,
   },
 ];
 
