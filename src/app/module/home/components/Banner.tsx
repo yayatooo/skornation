@@ -21,7 +21,7 @@ export const Banner = () => {
               spaceBetween: 0,
             },
             768: {
-              slidesPerView: 1.4,
+              slidesPerView: 1.2,
               spaceBetween: 32,
             },
             1024: {
