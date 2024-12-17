@@ -50,6 +50,7 @@ export const SwiperAbout = () => {
                   alt={item.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                  priority={index < 2}
                   className="object-cover"
                 />
               </div>
