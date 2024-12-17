@@ -7,7 +7,7 @@ export const GalleryStore = () => {
 
   return (
     <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="about">
-      <div className="md:flex md:items-center lg:items-start gap-8">
+      <div className="flex flex-col-reverse gap-0 md:flex-row md:items-center lg:items-start md:gap-8">
         <div className="flex w-10/12 mx-auto py-4 lg:py-0 justify-center">
           <div>
             <Image
@@ -19,7 +19,7 @@ export const GalleryStore = () => {
           </div>
         </div>
         <div className="w-10/12 mx-auto md:w-7/12 md:mx-0">
-          <div className="text-white font-bold text-xl py-4 lg:text-6xl">
+          <div className="text-white font-bold text-xl lg:text-6xl">
             <h1 className="w-full text-center md:text-start">{t("Title")}</h1>
           </div>
           <div className="flex flex-col w-full py-3">
