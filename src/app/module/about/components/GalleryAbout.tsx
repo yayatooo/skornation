@@ -12,7 +12,7 @@ export const GalleryAbout = () => {
   return (
     // <section className="pt-28 mini:pt-44 ipad:pt-48 tablet:pt-52">
     <section>
-      <div className="w-10/12 text-center lg:text-start flex flex-col justify-end mx-auto py-4">
+      <div className="w-10/12 text-center flex flex-col items-center justify-end mx-auto py-4 xl:py-12">
         <TittleHeading>{t('Title')}</TittleHeading>
         <DescriptionHeading>
           {t('Description')}

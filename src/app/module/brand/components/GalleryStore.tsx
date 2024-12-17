@@ -6,7 +6,7 @@ export const GalleryStore = () => {
   const t = useTranslations("SalePage");
 
   return (
-    <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="sale">
+    <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="about">
       <div className="md:flex md:items-center lg:items-start gap-8">
         <div className="flex w-10/12 mx-auto py-4 lg:py-0 justify-center">
           <div>

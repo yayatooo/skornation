@@ -30,6 +30,7 @@ export const Comments = () => {
             spaceBetween: 26,
           },
         }}
+        loop={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >

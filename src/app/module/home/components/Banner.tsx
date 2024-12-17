@@ -17,12 +17,12 @@ export const Banner = () => {
           modules={[Autoplay, Pagination]}
           breakpoints={{
             350: {
-              slidesPerView: 1,
-              spaceBetween: 0,
+              slidesPerView: 1.2,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 1.2,
-              spaceBetween: 32,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 1.5,

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import { CardModel } from "@/app/utils/data";
+import { Category } from "@/app/utils/data";
 // import { ArrowRight } from "lucide-react";
 
 export const CardCollection = () => {
@@ -19,9 +19,9 @@ export const CardCollection = () => {
       loop={true}
       className="w-10/12 mx-auto"
     >
-      {CardModel.map((item) => (
+      {Category.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="relative w-full aspect-[3/4] max-h-[540px]">
+          <div className="relative w-full aspect-[4/4] max-h-[540px]">
             <div className="absolute inset-0">
               <Image
                 src={item.image}
@@ -32,8 +32,8 @@ export const CardCollection = () => {
                 priority
               />
             </div>
-            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4">
-              <h1 className="font-semibold text-base md:text-lg text-white">
+            <div className="absolute inset-0 flex flex-col justify-center bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h1 className="font-semibold text-base md:text-lg lg:text-xl xl:text-3xl text-white">
                 {item.title}
               </h1>
             </div>

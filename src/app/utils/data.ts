@@ -6,13 +6,13 @@ export const Navlink = [
   },
   {
     id: 2,
-    name: "About",
-    href: "about",
+    name: "Brands",
+    href: "brand",
   },
   {
     id: 3,
-    name: "Brands",
-    href: "brand",
+    name: "About",
+    href: "about",
   },
   {
     id: 4,
@@ -68,17 +68,17 @@ export const BannerSlide = [
   {
     id: 2,
     title: "cover",
-    image: "/assets/cover-3.jpg",
+    image: "/assets/cover-1.jpg",
   },
   {
     id: 3,
     title: "cover",
-    image: "/assets/cover-3.jpg",
+    image: "/assets/cover-2.png",
   },
   {
     id: 4,
     title: "cover",
-    image: "/assets/cover-3.jpg",
+    image: "/assets/cover-4.jpg",
   },
 ];
 
@@ -86,22 +86,17 @@ export const GallerySlide = [
   {
     id: 1,
     title: "gallery",
-    image: "/assets/gallery-1.png",
+    image: "/assets/gallery-1.jpg",
   },
   {
     id: 2,
     title: "gallery",
-    image: "/assets/gallery-2.jpeg",
+    image: "/assets/gallery-2.jpg",
   },
   {
     id: 3,
     title: "gallery",
-    image: "/assets/gallery-1.png",
-  },
-  {
-    id: 4,
-    title: "gallery",
-    image: "/assets/gallery-2.jpeg",
+    image: "/assets/gallery-3.jpg",
   },
 ];
 
@@ -141,26 +136,21 @@ export const Brands = [
   },
 ];
 
-export const CardModel = [
+export const Category = [
   {
     id: 1,
-    title: "Training",
-    image: "/assets/model-1.png",
+    title: "Apparel",
+    image: "/assets/category-1.jpg",
   },
   {
     id: 2,
-    title: "Running",
-    image: "/assets/model-2.png",
+    title: "Footwear",
+    image: "/assets/category-2.jpg",
   },
   {
     id: 3,
-    title: "Casual",
-    image: "/assets/model-3.png",
-  },
-  {
-    id: 4,
-    title: "StreetWear",
-    image: "/assets/model-4.png",
+    title: "Accesories",
+    image: "/assets/category-3.jpg",
   },
 ];
 

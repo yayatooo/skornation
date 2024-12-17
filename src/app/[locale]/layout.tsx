@@ -11,7 +11,7 @@ export default function LocaleLayout({
     <>
       <PromoDropDown />
       <Navbar />
-      <main className="bg-graySecondary">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

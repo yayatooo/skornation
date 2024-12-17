@@ -14,15 +14,19 @@ export const Navbar = () => {
     setOpenMenu(true);
   };
 
-  const scrollToSection = (elementId: string) => {
+  const scrollToSection = (elementId: string, offset: number = 0) => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({
+      const yOffset = offset;
+      const yPosition = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+      window.scrollTo({
+        top: yPosition,
         behavior: "smooth",
-        block: "start",
       });
     }
   };
+  
 
   return (
     <>
@@ -46,7 +50,9 @@ export const Navbar = () => {
             {Navlink.map((item) => (
               <div key={item.id}>
                 <button
-                  onClick={() => scrollToSection(item.href.replace("#", ""))}
+                  onClick={() =>
+                    scrollToSection(item.href.replace("#", ""), -100)
+                  } 
                   className="hover:text-red-700 transition-colors"
                 >
                   {item.name}

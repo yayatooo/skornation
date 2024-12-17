@@ -1,31 +1,31 @@
 import React from "react";
 import { TittleHeading } from "../common/ui/TittleHeading";
 import { DescriptionHeading } from "../common/ui/DescriptionHeading";
-// import { Facebook, Instagram, Send } from "lucide-react";
 import { Address } from "./components/Address";
-import { Promo } from "./components/Promo";
 import { useTranslations } from "next-intl";
 import { Comments } from "./components/Comments";
-// import { GalleryInspired } from "./components/GalleryInspired";
+import { Facebook, Instagram, Send } from "lucide-react";
 
 export default function StorePage() {
-  const t = useTranslations("GetInspiredPage");
+  const t = useTranslations("ReviewPage");
 
   return (
     <>
       <section className="sm:py-8 w-10/12 mx-auto">
-        <TittleHeading>{t("Title")}</TittleHeading>
-        <DescriptionHeading>{t("Description")}</DescriptionHeading>
+        <div className="xl:py-12">
+          <TittleHeading>{t("Title")}</TittleHeading>
+          <DescriptionHeading>{t("Description")}</DescriptionHeading>
+        </div>
         <Comments />
       </section>
-      {/* <div className="flex justify-center gap-8 py-8 mb-4 border-y-2 border-darkThird">
-        <Facebook />
-        <Instagram />
-        <Send />
-      </div> */}
-      <div>
+      <div className="flex w-10/12 mx-auto my-8 gap-6 lg:gap-20 justify-center py-6 border-y-2 border-y-black">
+        <Facebook className="w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14" />
+        <Instagram className="w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14" />
+        <Send className="w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14" />
+      </div>
+
+      <div className="mb-8">
         <Address />
-        <Promo />
       </div>
     </>
   );

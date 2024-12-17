@@ -9,43 +9,43 @@ import { ArrowRight } from "lucide-react";
 
 export const CardProduct = () => {
   return (
-    <section className="py-8">
+    <div className="mt-6">
       <Swiper
         breakpoints={{
-          350: { slidesPerView: 1.3, spaceBetween: 10 },
-          490: { slidesPerView: 1.7, spaceBetween: 10 },
-          650: { slidesPerView: 2.1, spaceBetween: 10 },
-          750: { slidesPerView: 2.5, spaceBetween: 10 },
-          1024: { slidesPerView: 3.3, spaceBetween: 15 },
+          350: { slidesPerView: 1.5, spaceBetween: 15 },
+          650: { slidesPerView: 2.2, spaceBetween: 15 },
+          768: { slidesPerView: 3.5, spaceBetween: 15 },
         }}
-        loop={false}
-        // className="relative w-10/12 mx-auto h-full float-right lg:flex lg:float-none lg:container"
-        className="w-10/12 h-full "
+        loop={true}
+        centeredSlides={true}
+        className="w-full"
       >
         {ProductsDummy.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="flex flex-col">
-              {/* Image Section */}
-              <div className=" relative w-full h-[280px] xl:h-[390px]">
+            <div className="group flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
+              {/* Image Container */}
+              <div className="relative w-full aspect-square overflow-hidden">
                 <Image
                   src={item.image}
-                  alt="product"
+                  alt={item.title}
                   fill
-                  style={{
-                    objectFit: "cover",
-                  }}
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
+                  priority={item.id <= 2} // Prioritize loading first two images
                 />
               </div>
 
-              {/* Title and Arrow Section */}
-              <div className="flex px-3 xl:pr-3 py-2 justify-between items-center">
-                <h2 className="font-semibold text-lg truncate">{item.title}</h2>
-                <ArrowRight className="text-redPrimary flex-shrink-0" />
+              {/* Content Container */}
+              <div className="flex justify-between items-center px-2 py-3">
+                <h2 className="font-semibold text-sm sm:text-base lg:text-lg truncate pr-2">
+                  {item.title}
+                </h2>
+                <ArrowRight className="text-redPrimary flex-shrink-0 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };

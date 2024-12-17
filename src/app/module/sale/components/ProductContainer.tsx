@@ -9,7 +9,7 @@ export const ProductContainer = () => {
 
   return (
     <section>
-      <div className='w-10/12 mx-auto'>
+      <div className='w-10/12 mx-auto text-center pt-4'>
         <TittleHeading>{t('Title')}</TittleHeading>
       </div>
         <CardProduct />

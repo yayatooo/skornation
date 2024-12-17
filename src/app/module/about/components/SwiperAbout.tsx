@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export const SwiperAbout = () => {
   return (
-    <section className="my-4">
+    <section className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]">
       <Swiper
         breakpoints={{
           350: {
@@ -16,12 +16,12 @@ export const SwiperAbout = () => {
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.1,
-            spaceBetween: 32,
+            slidesPerView: 1.2,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 2.3,
-            spaceBetween: 26,
+            slidesPerView: 1.5,
+            spaceBetween: 10,
           },
         }}
         loop={true}
@@ -30,13 +30,14 @@ export const SwiperAbout = () => {
       >
         {GallerySlide.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="h-auto overflow-hidden w-full ">
+            <div className="relative w-full h-full">
               <Image
                 src={item.image}
                 alt={item.title}
-                width={611}
-                height={401}
-                className="object-cover w-full h-auto"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                priority
+                className="object-cover"
               />
             </div>
           </SwiperSlide>
