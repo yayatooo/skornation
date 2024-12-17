@@ -12,7 +12,7 @@ export default function StorePage() {
   return (
     <>
       <section className="sm:py-8 w-10/12 mx-auto">
-        <div className="xl:py-12">
+        <div className="pt-8 xl:py-12">
           <TittleHeading>{t("Title")}</TittleHeading>
           <DescriptionHeading>{t("Description")}</DescriptionHeading>
         </div>
