@@ -1,26 +1,14 @@
-"use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { Category } from "@/app/utils/data";
-// import { ArrowRight } from "lucide-react";
 
 export const CardCollection = () => {
   return (
-    <Swiper
-      breakpoints={{
-        350: { slidesPerView: 1.2, spaceBetween: 10 },
-        490: { slidesPerView: 1.8, spaceBetween: 10 },
-        768: { slidesPerView: 3, spaceBetween: 10 },
-        1024: { slidesPerView: 3, spaceBetween: 12 },
-      }}
-      loop={true}
-      className="w-10/12 mx-auto"
-    >
+    <div className="grid grid-cols-3">
       {Category.map((item) => (
-        <SwiperSlide key={item.id}>
+        <div key={item.id}>
           <div className="relative w-full aspect-[4/4] max-h-[540px]">
             <div className="absolute inset-0">
               <Image
@@ -38,8 +26,8 @@ export const CardCollection = () => {
               </h1>
             </div>
           </div>
-        </SwiperSlide>
+        </div>
       ))}
-    </Swiper>
+    </div>
   );
 };

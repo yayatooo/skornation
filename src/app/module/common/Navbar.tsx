@@ -18,15 +18,15 @@ export const Navbar = () => {
     const element = document.getElementById(elementId);
     if (element) {
       const yOffset = offset;
-      const yPosition = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  
+      const yPosition =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
       window.scrollTo({
         top: yPosition,
         behavior: "smooth",
       });
     }
   };
-  
 
   return (
     <>
@@ -36,23 +36,25 @@ export const Navbar = () => {
           <div className="lg:hidden">
             <Menu onClick={handleOpenMenu} />
           </div>
-          <div className="relative w-[62px] h-[30px] lg:w-[102px] lg:h-[50px]">
+          <div className=" w-[62px] h-[30px] lg:w-[102px] lg:h-[50px]">
             <Link href="/">
               <Image
                 src="/assets/skor-logo-navbar.png"
                 width={102}
                 height={50}
                 alt="navbar logo"
+                // sizes="(max-width: 1024px) 62px, 102px"
               />
             </Link>
           </div>
+
           <div className="hidden lg:flex gap-12 font-semibold text-2xl">
             {Navlink.map((item) => (
               <div key={item.id}>
                 <button
                   onClick={() =>
                     scrollToSection(item.href.replace("#", ""), -100)
-                  } 
+                  }
                   className="hover:text-red-700 transition-colors"
                 >
                   {item.name}

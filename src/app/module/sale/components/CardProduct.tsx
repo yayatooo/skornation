@@ -8,6 +8,16 @@ import { ProductsDummy } from "@/app/utils/data";
 import { ArrowRight } from "lucide-react";
 
 export const CardProduct = () => {
+
+  const MIN_SLIDES_FOR_LOOP = 6; // Depends on your breakpoints
+  const isLoopEnabled = ProductsDummy.length >= MIN_SLIDES_FOR_LOOP;
+
+  // Duplicate slides if necessary to enforce looping
+  const slides = isLoopEnabled
+    ? ProductsDummy
+    : [...ProductsDummy, ...ProductsDummy]; // Duplicate manually if fewer slides
+
+
   return (
     <div className="mt-6">
       <Swiper
@@ -16,12 +26,12 @@ export const CardProduct = () => {
           650: { slidesPerView: 2.2, spaceBetween: 15 },
           768: { slidesPerView: 3.5, spaceBetween: 15 },
         }}
-        loop={true}
+        loop={isLoopEnabled}
         centeredSlides={true}
         className="w-full"
       >
-        {ProductsDummy.map((item) => (
-          <SwiperSlide key={item.id}>
+        {slides.map((item, index) => (
+          <SwiperSlide key={index}> {/* Ensure unique keys */}
             <div className="group flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
               {/* Image Container */}
               <div className="relative w-full aspect-square overflow-hidden">
@@ -31,7 +41,7 @@ export const CardProduct = () => {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
-                  priority={item.id <= 2} // Prioritize loading first two images
+                  priority={index <= 2} // Prioritize loading first two images
                 />
               </div>
 

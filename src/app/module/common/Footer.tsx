@@ -6,13 +6,13 @@ export default function Footer() {
     <>
       <footer className="bg-black py-8">
         <div className="flex w-10/12 mx-auto justify-center md:justify-between gap-8 text-[12px] text-graySecondary">
-          <div>
-            <Image
-              src="/assets/skor-logo-navbar.png"
-              width={102}
-              height={50}
-              alt="navbar logo"
-            />
+        <div className=" w-[62px] h-[30px] lg:w-[102px] lg:h-[50px]">
+              <Image
+                src="/assets/skor-logo-navbar.png"
+                width={102}
+                height={50}
+                alt="navbar logo"
+              />
           </div>
           <div className="flex gap-8">
             <div className="space-y-2">

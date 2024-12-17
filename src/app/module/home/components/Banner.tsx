@@ -10,54 +10,69 @@ import Image from "next/image";
 import styles from "./banner.module.css";
 
 export const Banner = () => {
+
+  // Calculate minimum slides needed for loop
+  const minSlidesForLoop = Math.max(
+    1.5, // Largest slidesPerView value
+    BannerSlide.length
+  );
+
+  // Check if we have enough slides for loop
+  const shouldEnableLoop = BannerSlide.length >= minSlidesForLoop;
+
+  // Create duplicated slides array if needed
+  const slidesData = shouldEnableLoop 
+    ? BannerSlide 
+    : [...BannerSlide, ...BannerSlide]; 
+
   return (
     <section className="w-full relative" id="home">
-      <div className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          breakpoints={{
-            350: {
-              slidesPerView: 1.2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 1.2,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 1.5,
-              spaceBetween: 10,
-            },
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          pagination={{
-            clickable: true,
-            bulletClass: `swiper-pagination-bullet ${styles.paginationBullet}`,
-            bulletActiveClass: `swiper-pagination-bullet-active ${styles.paginationBulletActive}`,
-          }}
-          centeredSlides={true}
-          className="h-full w-full"
-        >
-          {BannerSlide.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div className="relative w-full h-full">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-                  priority
-                  className="object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
+    <div className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]">
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        breakpoints={{
+          350: {
+            slidesPerView: Math.min(1.2, slidesData.length),
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: Math.min(1.2, slidesData.length),
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: Math.min(1.5, slidesData.length),
+            spaceBetween: 10,
+          },
+        }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        loop={shouldEnableLoop}
+        pagination={{
+          clickable: true,
+          bulletClass: `swiper-pagination-bullet ${styles.paginationBullet}`,
+          bulletActiveClass: `swiper-pagination-bullet-active ${styles.paginationBulletActive}`,
+        }}
+        centeredSlides={true}
+        className="h-full w-full"
+        watchOverflow={true}
+      >
+        {slidesData.map((item, index) => (
+          <SwiperSlide key={`${item.id}-${index}`}>
+            <div className="relative w-full h-full">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                className="object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  </section>
   );
 };

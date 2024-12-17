@@ -10,9 +10,9 @@ export const CollectionContainer = () => {
   return (
     <>
       <section className="w-10/12 mx-auto"></section>
-      <div className="py-6 flex justify-end w-full">
-        <div className="w-10/12 mx-auto text-center pb-6">
-          <div className="py-8">
+      <div className="flex justify-end w-full">
+        <div className="w-full mx-auto text-center pb-6">
+          <div className="py-4 xl:py-12 w-10/12 xl:w-8/12 mx-auto">
             <TittleHeading>{t("Title2")}</TittleHeading>
             <DescriptionHeading>
              {t('Description')}
@@ -21,10 +21,6 @@ export const CollectionContainer = () => {
           <CardCollection />
         </div>
       </div>
-        <div className="bg-redPrimary text-center p-4 mb-8 md:p-8 text-white w-10/12 mx-auto md:text-2xl">
-          Sport Casual, Fitness, Training, Running, Football, Basketball,
-          Tennis, Golf, Skateboarding, and Swim.
-        </div>
     </>
   );
 };
