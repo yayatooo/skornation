@@ -14,7 +14,7 @@ export const DetailAbout = () => {
             <div className="flex flex-col w-full py-3">
               <div className="space-y-4 w-full ">
                 <p className="text-black font-medium text-sm lg:text-xl xl:text-2xl">
-                  {t("Description")}
+                  {t('Description')}
                 </p>
                 <div className="flex w-full justify-center">
                   <div>
@@ -27,12 +27,12 @@ export const DetailAbout = () => {
                   </div>
                 </div>
                 <p className="text-black font-medium text-sm lg:text-xl xl:text-2xl">
-                  {t("SubDescription")}
+                  {t('SubDescription')}
                 </p>
               </div>
             </div>
             <div className="font-bold text-redPrimary text-3xl md:my-4 md:text-4xl md:text-center lg:my-6 lg:text-7xl">
-              <h1>"{t("HeadLine")}"</h1>
+              <h1>&quot;{t('HeadLine')}&quot;</h1>
             </div>
           </div>
         </div>
