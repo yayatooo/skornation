@@ -1,6 +1,6 @@
-import { Navlink } from "@/app/utils/data";
+import { Navlink, socialLinks } from "@/app/utils/data";
 import clsx from "clsx";
-import { Facebook, Instagram, Send, X } from "lucide-react";
+import { X } from "lucide-react";
 import React from "react";
 
 interface SidebarProps {
@@ -50,11 +50,22 @@ export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
         ))}
       </div>
 
+
+
       {/* Social Media Icons */}
       <div className="flex gap-6 justify-center mt-auto pb-6">
-        <Facebook />
-        <Instagram />
-        <Send />
+      {socialLinks.map(({ href, icon: Icon, label }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+            aria-label={label}
+          >
+            <Icon />
+          </a>
+        ))}
       </div>
     </div>
   );

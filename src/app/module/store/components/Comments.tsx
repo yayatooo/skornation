@@ -18,11 +18,11 @@ export const Comments = () => {
         }}
         breakpoints={{
           350: {
-            slidesPerView: 1,
+            slidesPerView: 1.3,
             spaceBetween: 24,
           },
           768: {
-            slidesPerView: 1,
+            slidesPerView: 1.3,
             spaceBetween: 32,
           },
           1024: {
@@ -31,6 +31,7 @@ export const Comments = () => {
           },
         }}
         loop={true}
+        centeredSlides={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
@@ -42,7 +43,7 @@ export const Comments = () => {
           ))}
         </div>
       </Swiper>
-      <div className="flex gap-2 font-bold text-lg py-2 items-center justify-end cursor-pointer">
+      <div className="flex gap-2 font-bold text-lg py-2 items-center justify-end cursor-pointer w-10/12 mx-auto xl:py-6">
         <h4>More Reviews </h4>
         <ArrowRight color="#ec2332" />
       </div>

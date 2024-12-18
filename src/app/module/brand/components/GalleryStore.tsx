@@ -33,7 +33,7 @@ export const GalleryStore = () => {
           <div className="text-white font-bold text-xl lg:text-6xl">
             <h1 className="w-full text-center md:text-start">{t("Title")}</h1>
           </div>
-          <div className="flex flex-col w-full py-3">
+          <div className="flex flex-col w-full py-3 xl:py-8">
             <div className="space-y-4 w-full ">
               <p className="text-white font-medium text-sm lg:text-xl xl:text-2xl">
                 {t("Description")}
@@ -43,11 +43,11 @@ export const GalleryStore = () => {
               </p>
             </div>
           </div>
-          <div className="hidden md:inline">
-            <Link href="/about" className="flex justify-start">
-              <Button>
+          <div className="hidden md:flex">
+            <Link href="/about">
+              <button className="bg-black text-white font-semibold flex justify-start items-center gap-2 p-3 xl:text-2xl">
                 Discover More <ArrowRight className="text-redPrimary" />
-              </Button>
+              </button>
             </Link>
           </div>
         </div>

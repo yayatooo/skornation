@@ -30,7 +30,7 @@ export const PromoDropDown = () => {
       >
         <div className="w-10/12 mx-auto">
           <div className="flex justify-center items-center text-white font-bold">
-            <p className=" text-sm">SAVE UP TO 50% OFF + FREE SHIPPING</p>
+            <p className=" text-sm xl:text-lg">SAVE UP TO 50% OFF + FREE SHIPPING</p>
             <div>
               <ChevronDown size={16} />
             </div>

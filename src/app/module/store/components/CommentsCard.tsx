@@ -13,7 +13,7 @@ export const CommentsCard = ({
   comment,
 }: CommentsCardProps) => {
   return (
-    <section className="bg-gray-50 w-full min-h-[216px] p-4 rounded-sm shadow-sm" key={id}>
+    <section className="bg-gray-50 w-full text-start min-h-[216px] p-4 rounded-sm shadow-sm" key={id}>
       <div className="flex justify-between">
         <h1 className="font-semibold text-darkThird">{user}</h1>
         <MapPin color="red" />

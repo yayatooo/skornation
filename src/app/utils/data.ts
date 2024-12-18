@@ -212,3 +212,23 @@ export const Reviews = [
     comment : "Best sport experience. #Nike"
   },
 ]
+
+import { Facebook, Instagram, Send } from "lucide-react";
+
+export const socialLinks = [
+  {
+    href: "https://www.facebook.com/skornationcambodia",
+    icon: Facebook,
+    label: "Facebook",
+  },
+  {
+    href: "https://www.instagram.com/skor_cambodia/?hl=en",
+    icon: Instagram,
+    label: "Instagram",
+  },
+  {
+    href: "https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6",
+    icon: Send,
+    label: "Location",
+  },
+];
