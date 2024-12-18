@@ -13,12 +13,12 @@ export const Button: React.FC<ButtonUiProps> = ({ href, children, className, tar
   const isExternal = target === "_blank";
 
   return (
-    <div className="hidden md:flex">
+    <div className="">
       <Link
         href={href}
         target={target}
         rel={isExternal ? "noopener noreferrer" : undefined} // Add rel only if opening in a new tab
-        className={`bg-black text-white font-semibold flex items-center gap-2 p-3 xl:text-2xl hover:bg-gray-800 transition-all ${className}`}
+        className={`bg-black text-white font-semibold flex items-center gap-2 p-3 xl:text-2xl hover:bg-darkThird transition-all ${className}`}
       >
         {children} <ArrowRight className="text-redPrimary" />
       </Link>

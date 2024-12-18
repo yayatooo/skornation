@@ -11,7 +11,7 @@ export const GalleryStore = () => {
   return (
     <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="about">
       <div className="flex flex-col-reverse justify-center gap-0 md:flex-row md:items-center lg:items-start md:gap-8">
-        <div className=" md:hidden">
+        <div className="flex justify-center md:hidden">
           <Button href="/about">
             Discover More
           </Button>
