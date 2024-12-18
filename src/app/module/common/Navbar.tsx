@@ -53,7 +53,7 @@ export const Navbar = () => {
               <div key={item.id}>
                 <button
                   onClick={() =>
-                    scrollToSection(item.href.replace("#", ""), -100)
+                    scrollToSection(item.href.replace("#", ""), -125)
                   }
                   className="hover:text-red-700 transition-colors"
                 >

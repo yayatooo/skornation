@@ -8,7 +8,7 @@ export const ProductContainer = () => {
   const t = useTranslations('ProductPage')
 
   return (
-    <section>
+    <section id='sale'>
       <div className='w-10/12 mx-auto text-center pt-4'>
         <TittleHeading>{t('Title')}</TittleHeading>
       </div>

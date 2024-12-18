@@ -16,7 +16,7 @@ export const SwiperAbout = () => {
     : GallerySlide;
 
   return (
-    <section className="w-full relative" id="home">
+    <section className="w-full relative">
       <div className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]">
         <Swiper
           breakpoints={{
