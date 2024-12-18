@@ -9,7 +9,7 @@ interface ButtonUiProps {
   target?: "_self" | "_blank"; // Optional target for opening in a new tab
 }
 
-export const ButtonUi: React.FC<ButtonUiProps> = ({ href, children, className, target = "_self" }) => {
+export const Button: React.FC<ButtonUiProps> = ({ href, children, className, target = "_self" }) => {
   const isExternal = target === "_blank";
 
   return (

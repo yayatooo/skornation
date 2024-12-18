@@ -1,8 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ButtonUi";
 import clsx from "clsx";
 import {
-  ArrowRight,
   ChevronDown,
   Facebook,
   Instagram,
@@ -30,7 +29,9 @@ export const PromoDropDown = () => {
       >
         <div className="w-10/12 mx-auto">
           <div className="flex justify-center items-center text-white font-bold">
-            <p className=" text-sm xl:text-lg">SAVE UP TO 50% OFF + FREE SHIPPING</p>
+            <p className=" text-sm xl:text-lg">
+              SAVE UP TO 50% OFF + FREE SHIPPING
+            </p>
             <div>
               <ChevronDown size={16} />
             </div>
@@ -68,8 +69,11 @@ export const PromoDropDown = () => {
             placeholder="Email Address..."
             className="border-2 border-black w-full p-1 font-semibold my-3"
           />
-          <Button className="my-8">
-            Continue <ArrowRight className="text-redPrimary" />
+          <Button
+            href="/development"
+            target="_blank"
+          >
+            Continue
           </Button>
         </div>
       </div>

@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ButtonUi } from "../../common/ButtonUi";
+import { Button } from "../../common/ButtonUi";
 
 export const GalleryStore = () => {
   const t = useTranslations("AboutUs");
@@ -13,9 +12,9 @@ export const GalleryStore = () => {
     <section className="bg-redPrimary p-4 lg:p-12 my-4 xl:my-12" id="about">
       <div className="flex flex-col-reverse justify-center gap-0 md:flex-row md:items-center lg:items-start md:gap-8">
         <div className=" md:hidden">
-          <ButtonUi href="/about">
+          <Button href="/about">
             Discover More
-          </ButtonUi>
+          </Button>
         </div>
         <div className="flex w-10/12 mx-auto py-4 lg:py-0 justify-center">
           <div>

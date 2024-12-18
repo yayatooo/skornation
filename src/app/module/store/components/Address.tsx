@@ -1,7 +1,7 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import {  MapPin } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { ButtonUi } from "../../common/ButtonUi";
+import { Button } from "../../common/ButtonUi";
 
 export const Address = () => {
   return (
@@ -28,9 +28,9 @@ export const Address = () => {
           <p>443A Preah Monivong Blvd (93) Phnom Penh, Cambodia</p>
         </div>
         <div className="flex justify-center lg:justify-start">
-          <ButtonUi href="https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6" target="_blank">
+          <Button href="https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6" target="_blank">
             Discover More
-          </ButtonUi>
+          </Button>
         </div>
       </div>
     </section>
