@@ -4,22 +4,11 @@ import { DescriptionHeading } from "../../common/ui/DescriptionHeading";
 import { CardCollection } from "./CategoryCard";
 import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
+import { badges } from "@/app/utils/data";
 
 export const CollectionContainer = () => {
   const t = useTranslations("CollectionPage");
 
-  const badges = [
-    "Sport Casual",
-    "Fitness",
-    "Training",
-    "Running",
-    "Football",
-    "Basketball",
-    "Golf",
-    "Skateboarding",
-    "Swim",
-    "Tennis",
-  ];
 
   return (
     <section className="w-full mx-auto">

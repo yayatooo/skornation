@@ -232,3 +232,16 @@ export const socialLinks = [
     label: "Location",
   },
 ];
+
+export const badges = [
+  "Sport Casual",
+  "Fitness",
+  "Training",
+  "Running",
+  "Football",
+  "Basketball",
+  "Golf",
+  "Skateboarding",
+  "Swim",
+  "Tennis",
+];
