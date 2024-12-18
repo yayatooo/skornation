@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export const GalleryAbout = () => {
 
-  const t = useTranslations('AboutPage')
+  const t = useTranslations('AboutStore')
 
   return (
     <section>

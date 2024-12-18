@@ -5,56 +5,60 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { ProductsDummy } from "@/app/utils/data";
-import { ArrowRight } from "lucide-react";
 
 export const CardProduct = () => {
-
-  const MIN_SLIDES_FOR_LOOP = 6; // Depends on your breakpoints
-  const isLoopEnabled = ProductsDummy.length >= MIN_SLIDES_FOR_LOOP;
-
-  // Duplicate slides if necessary to enforce looping
-  const slides = isLoopEnabled
-    ? ProductsDummy
-    : [...ProductsDummy, ...ProductsDummy]; // Duplicate manually if fewer slides
-
+  // Calculate if we have enough slides for loop mode
+  const minSlides = Math.max(3.5, 2.2, 1.5); // Maximum slidesPerView value
+  const hasEnoughSlides = ProductsDummy.length > minSlides;
 
   return (
     <div className="mt-6">
       <Swiper
         breakpoints={{
-          350: { slidesPerView: 1.5, spaceBetween: 15 },
-          650: { slidesPerView: 2.2, spaceBetween: 15 },
-          768: { slidesPerView: 3.5, spaceBetween: 15 },
+          350: { 
+            slidesPerView: Math.min(1.5, ProductsDummy.length),
+            spaceBetween: 15 
+          },
+          650: { 
+            slidesPerView: Math.min(2.2, ProductsDummy.length),
+            spaceBetween: 15 
+          },
+          768: { 
+            slidesPerView: Math.min(3.5, ProductsDummy.length),
+            spaceBetween: 15 
+          },
         }}
-        loop={isLoopEnabled}
-        centeredSlides={true}
+        loop={hasEnoughSlides}
+        centeredSlides={hasEnoughSlides}
+        slidesPerGroup={1} // Add this to make sliding smoother
         className="w-full"
       >
-        {slides.map((item, index) => (
-          <SwiperSlide key={index}> {/* Ensure unique keys */}
-            <div className="group flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
-              {/* Image Container */}
-              <div className="relative w-full aspect-square overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
-                  priority={index <= 2} // Prioritize loading first two images
-                />
-              </div>
+        {/* Double the slides if we need looping */}
+        {[...ProductsDummy, ...(hasEnoughSlides ? ProductsDummy : [])]
+          .map((item, index) => (
+            <SwiperSlide key={`${item.title}-${index}`}>
+              <div className="group flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
+                {/* Image Container */}
+                <div className="relative w-full aspect-square overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
+                    priority={index <= 2}
+                  />
+                </div>
 
-              {/* Content Container */}
-              <div className="flex justify-between items-center px-2 py-3">
-                <h2 className="font-semibold text-sm sm:text-base lg:text-lg truncate pr-2">
-                  {item.title}
-                </h2>
-                <ArrowRight className="text-redPrimary flex-shrink-0 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                {/* Content Container */}
+                <div className="flex justify-between items-center px-2 py-3">
+                  <h2 className="font-semibold text-sm sm:text-base lg:text-lg truncate pr-2">
+                    {item.title}
+                  </h2>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
       </Swiper>
     </div>
   );
