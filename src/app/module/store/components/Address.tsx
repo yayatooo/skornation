@@ -1,6 +1,7 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { ButtonUi } from "../../common/ButtonUi";
 
 export const Address = () => {
   return (
@@ -27,16 +28,9 @@ export const Address = () => {
           <p>443A Preah Monivong Blvd (93) Phnom Penh, Cambodia</p>
         </div>
         <div className="flex justify-center lg:justify-start">
-          <button className="bg-black text-white font-semibold flex justify-start items-center gap-2 p-3 xl:text-2xl">
-            <a
-              href="https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              Get Direction <ArrowRight className="text-redPrimary" />
-            </a>
-          </button>
+          <ButtonUi href="https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6" target="_blank">
+            Discover More
+          </ButtonUi>
         </div>
       </div>
     </section>
