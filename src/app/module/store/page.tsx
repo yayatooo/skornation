@@ -9,13 +9,13 @@ import { socialLinks } from "@/app/utils/data";
 export default function StorePage() {
   const t = useTranslations("ReviewPage");
 
-  const iconClasses = "w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14";
+  const iconClasses = "w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14 stroke-black";
 
   return (
     <div className="w-full mx-auto">
       {/* Heading Section */}
-      <section className="sm:py-8 text-center">
-        <div className="pt-8 xl:py-12 w-10/12 mx-auto">
+      <section className="py-6 xl:py-12 xxl:py16 text-center">
+        <div className="pt-4 xl:py-12 w-10/12 mx-auto">
           <TittleHeading>{t("Title")}</TittleHeading>
           <DescriptionHeading>{t("Description")}</DescriptionHeading>
         </div>
@@ -23,7 +23,7 @@ export default function StorePage() {
       </section>
 
       {/* Social Media Links */}
-      <div className="flex my-8 gap-6 lg:gap-20 justify-center py-6 border-y-2 border-y-black">
+      <div className="flex gap-6 lg:gap-20 justify-center py-6 border-y-2 border-y-black">
         {socialLinks.map(({ href, icon: Icon, label }) => (
           <a
             key={label}

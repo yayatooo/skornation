@@ -213,23 +213,32 @@ export const Reviews = [
   },
 ]
 
-import { Facebook, Instagram, Send } from "lucide-react";
+
+import { TelegramIcons } from "../module/common/TelegramIcons";
+import { TiktokIcons } from "../module/common/TiktokIcons";
+import { FacebookIcons } from "../module/common/FacebookIcons";
+import { InstagramIcons } from "../module/common/InstagramIcons";
 
 export const socialLinks = [
   {
     href: "https://www.facebook.com/skornationcambodia",
-    icon: Facebook,
+    icon: FacebookIcons,
     label: "Facebook",
   },
   {
     href: "https://www.instagram.com/skor_cambodia/?hl=en",
-    icon: Instagram,
+    icon: InstagramIcons,
     label: "Instagram",
   },
   {
     href: "https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6",
-    icon: Send,
+    icon: TelegramIcons,
     label: "Location",
+  },
+  {
+    href: "https://www.tiktok.com/@skor_cambodia",
+    icon: TiktokIcons,
+    label: "Tiktok",
   },
 ];
 

@@ -24,6 +24,8 @@ export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
     }
   };
 
+  const iconClasses = "w-6 h-6 md:w-8 md:h-8 lg:w-14 lg:h-14 stroke-black";
+
   return (
     <div
       className={clsx(
@@ -63,7 +65,7 @@ export const SideMenu = ({ openMenu, setOpenMenu }: SidebarProps) => {
             className="flex items-center gap-2"
             aria-label={label}
           >
-            <Icon />
+            <Icon className={iconClasses} />
           </a>
         ))}
       </div>

@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ArrowRight } from "lucide-react";
 
 export const Comments = () => {
   return (
@@ -43,10 +42,6 @@ export const Comments = () => {
           ))}
         </div>
       </Swiper>
-      <div className="flex gap-2 font-bold text-lg py-2 items-center justify-end cursor-pointer w-10/12 mx-auto xl:py-6">
-        <h4>More Reviews </h4>
-        <ArrowRight color="#ec2332" />
-      </div>
     </section>
   );
 };

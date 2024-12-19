@@ -10,14 +10,14 @@ export const BrandDetailAbout = () => {
   return (
     <section className="bg-redPrimary text-white  text-center px-4 py-4 md:py-12 space-y-4 lg:space-y-8 mb-4">
       <div>
-        <h1 className="font-semibold text-lg uppercase md:text-4xl md:text-center lg:text-5xl">
+        <h1 className="font-bold text-lg uppercase md:text-4xl md:text-center lg:text-5xl">
           {t("BrandsProfile")}
         </h1>
       </div>
       <div className="w-10/12 xl:w-6/12 mx-auto grid grid-cols-4 gap-4">
         {Brands.map((item) => (
           <div
-            className="relative w-full max-w-[80px] aspect-square mx-auto"
+            className="relative w-full max-w-[120px] aspect-square mx-auto"
             key={item.id}
           >
             <Image
