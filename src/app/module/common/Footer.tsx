@@ -38,6 +38,14 @@ export default function Footer() {
               >
                 Instagram{" "}
               </a>
+              <a
+                href="https://www.tiktok.com/@skor_cambodia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Tiktok{" "}
+              </a>
             </div>
           </div>
         </div>
