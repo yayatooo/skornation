@@ -2,7 +2,7 @@
 import { socialLinks } from "@/app/utils/data";
 import { Button } from "./ButtonUi";
 import clsx from "clsx";
-import { ChevronDown, Facebook, Instagram, Send, X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
