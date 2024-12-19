@@ -7,7 +7,7 @@ export const Address = () => {
   return (
     <section
       id="store"
-      className="w-10/12 mx-auto lg:flex lg:justify-center lg:gap-8"
+      className="w-10/12 mx-auto lg:flex lg:justify-center lg:gap-8 xl:my-12"
     >
       <div>
         <div className="flex justify-center">

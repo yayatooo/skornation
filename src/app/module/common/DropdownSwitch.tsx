@@ -39,6 +39,7 @@ export const DropdownSwitch = () => {
                 width={23}
                 height={23}
                 alt="flag"
+                className="object-cover"
               />
               <h1>English</h1>
             </div>
@@ -50,6 +51,7 @@ export const DropdownSwitch = () => {
                 width={23}
                 height={23}
                 alt="flag"
+                className="object-cover"
               />
               <h1>Khmer</h1>
             </div>
