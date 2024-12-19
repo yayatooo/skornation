@@ -1,7 +1,7 @@
 import React from "react";
 import { TittleHeading } from "../../common/ui/TittleHeading";
 import { DescriptionHeading } from "../../common/ui/DescriptionHeading";
-import { CardCollection } from "./CategoryCard";
+import { CategoryCard } from "./CategoryCard";
 import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 import { badges } from "@/app/utils/data";
@@ -25,7 +25,7 @@ export const CollectionContainer = () => {
               ))}
             </div>
           </div>
-          <CardCollection />
+          <CategoryCard />
         </div>
       </div>
     </section>

@@ -140,17 +140,17 @@ export const Category = [
   {
     id: 1,
     title: "Apparel",
-    image: "/assets/category-1.jpg",
+    image: "/assets/category-2.jpg",
   },
   {
     id: 2,
     title: "Footwear",
-    image: "/assets/category-2.jpg",
+    image: "/assets/category-3.jpg",
   },
   {
     id: 3,
     title: "Accesories",
-    image: "/assets/category-3.jpg",
+    image: "/assets/category-1.jpg",
   },
 ];
 

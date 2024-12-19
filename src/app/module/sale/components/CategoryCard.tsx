@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { Category } from "@/app/utils/data";
 
-export const CardCollection = () => {
+export const CategoryCard = () => {
   return (
     <div className="grid grid-cols-3">
       {Category.map((item) => (

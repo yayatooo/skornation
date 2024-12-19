@@ -1,13 +1,7 @@
 "use client";
 import { Button } from "./ButtonUi";
 import clsx from "clsx";
-import {
-  ChevronDown,
-  Facebook,
-  Instagram,
-  Send,
-  X,
-} from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Send, X } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -45,8 +39,14 @@ export const PromoDropDown = () => {
         )}
       >
         <div className="flex justify-between pb-4">
-          <div className="relative w-[147px] h-[71px]">
-            <Image src="/assets/skor-logo-navbar.png" fill alt="navbar logo" />
+          <div className=" w-[147px] h-[71px]">
+            <Image
+              src="/assets/skor-logo-navbar.png"
+              width={102}
+              height={50}
+              alt="navbar logo"
+              // sizes="(max-width: 1024px) 62px, 102px"
+            />
           </div>
           <div className="border-2 border-black w-8 h-8 flex justify-center items-center">
             <X onClick={handleCloseDropDown} />
@@ -69,10 +69,7 @@ export const PromoDropDown = () => {
             placeholder="Email Address..."
             className="border-2 border-black w-full p-1 font-semibold my-3"
           />
-          <Button
-            href="/development"
-            target="_blank"
-          >
+          <Button href="/development" target="_blank">
             Continue
           </Button>
         </div>
