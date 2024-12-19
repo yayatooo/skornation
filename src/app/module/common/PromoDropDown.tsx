@@ -1,4 +1,5 @@
 "use client";
+import { socialLinks } from "@/app/utils/data";
 import { Button } from "./ButtonUi";
 import clsx from "clsx";
 import { ChevronDown, Facebook, Instagram, Send, X } from "lucide-react";
@@ -14,6 +15,7 @@ export const PromoDropDown = () => {
   const handleCloseDropDown = () => {
     setOpenDropDown(false);
   };
+  const iconClasses = "w-8 h-8 stroke-black";
 
   return (
     <>
@@ -52,7 +54,7 @@ export const PromoDropDown = () => {
             <X onClick={handleCloseDropDown} />
           </div>
         </div>
-        <div className="py-8">
+        <div className="py-8 w-full lg:w-6/12 mx-auto">
           <h1 className="text-start font-medium">
             Get free shipping, discount vouchers and members only products when
             you’re in Skor Club
@@ -60,15 +62,25 @@ export const PromoDropDown = () => {
           <h1 className="text-start font-bold">
             Log in or sign up (IT’S FREE)
           </h1>
-          <div className="flex gap-8 mt-auto py-4">
-            <Facebook />
-            <Instagram />
-            <Send />
-          </div>
+          <div className="flex gap-6 lg:gap-8 py-4 justify-start">
+                  {socialLinks.map(({ href, icon: Icon, label }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                      aria-label={label}
+                    >
+                      <Icon className={iconClasses} />
+                    </a>
+                  ))}
+                </div>
           <input
             placeholder="Email Address..."
-            className="border-2 border-black w-full p-1 font-semibold my-3"
+            className="border-2 border-black w-full p-1 lg:p-3 font-semibold mb-4"
           />
+          
           <Button href="/development" target="_blank">
             Continue
           </Button>
