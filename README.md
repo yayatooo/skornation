@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# SKORNATION 
 
-First, run the development server:
+Welcome to SKOR – your destination for premium brands like Nike and ON K-Swiss!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+SKOR is a cutting-edge e-commerce platform crafted to showcase and sell high-quality footwear, apparel, and accessories. Designed for sneaker enthusiasts and trendsetters, SKOR delivers a seamless shopping experience with a perfect blend of functionality and stylish design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Wide Product Range: Explore an extensive collection of Nike and KSwiss products, from sneakers and activewear to accessories.
+- Advanced Search and Filters: Quickly find your favorite products with intuitive search and filter options.
+- Responsive Design: Optimized for all devices, ensuring a smooth browsing experience on desktops, tablets, and smartphones.
+- Engaging UI/UX: A visually appealing interface, inspired by the bold aesthetics of Nike and KSwiss.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Client:** React, TailwindCSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Server:** Bun, Elysia (Soon)
+
+
+
+
