@@ -17,7 +17,7 @@ export const CategoryCard = () => {
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 33vw"
-                priority
+                blurDataURL={item.image}
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center bg-gradient-to-t from-black/70 to-transparent p-4">
