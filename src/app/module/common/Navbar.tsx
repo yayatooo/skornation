@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 import { DropdownSwitch } from "./DropdownSwitch";
 import { SideMenu } from "./SideMenu";
 import { Navlink } from "@/app/utils/data";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

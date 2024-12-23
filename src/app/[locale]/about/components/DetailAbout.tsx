@@ -7,8 +7,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Link } from "@/i18n/routing";
 
 export const DetailAbout = () => {
   const t = useTranslations("AboutUs");
