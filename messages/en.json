@@ -36,5 +36,8 @@
     "title": "Not Found",
     "description": "Could not find requested resource",
     "returnHome": "Return Home"
+  },
+  "Button" : {
+     "discoverMore": "Discover More"
   }
 }
