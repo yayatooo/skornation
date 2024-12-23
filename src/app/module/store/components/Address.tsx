@@ -17,6 +17,7 @@ export const Address = () => {
               alt="store"
               width={500}
               height={500}
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>

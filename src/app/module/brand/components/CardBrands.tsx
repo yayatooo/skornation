@@ -21,7 +21,7 @@ export const CardBrands = ({ image,title }: BrandCardProps) => {
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 25vw, 20vw"
-          priority
+          blurDataURL={image}
         />
       </div>
     </div>

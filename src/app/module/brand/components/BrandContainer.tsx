@@ -20,7 +20,6 @@ export const BrandContainer = () => {
               key={item.id}
               image={item.image}
               title={item.title}
-              // logo={item.logo}
               width={item.width}
               height={item.height}
             />

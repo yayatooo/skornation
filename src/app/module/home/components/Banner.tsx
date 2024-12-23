@@ -68,6 +68,7 @@ export const Banner = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                 blurDataURL={item.image}
                 className="object-cover"
+                
               />
             </div>
           </SwiperSlide>
