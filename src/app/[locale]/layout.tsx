@@ -1,18 +1,31 @@
-import Footer from "../module/common/Footer";
-import { Navbar } from "../module/common/Navbar";
+import type { Metadata } from "next";
+import { MavenPro } from "../fonts/font";
+import "../globals.css";
 import { PromoDropDown } from "../module/common/PromoDropDown";
+import { Navbar } from "../module/common/Navbar";
+import Footer from "../module/common/Footer";
 
-export default function LocaleLayout({
+export const metadata: Metadata = {
+  title: "SKORNATION",
+};
+
+
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
-    <>
-      <PromoDropDown />
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <html lang={locale}>
+      <body className={MavenPro.className}>
+        <PromoDropDown />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

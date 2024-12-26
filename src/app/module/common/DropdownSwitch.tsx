@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Select,
   SelectContent,
@@ -13,21 +13,20 @@ import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 
 export const DropdownSwitch = () => {
-
-  const [isPending, startTransition] = useTransition()
-  const router = useRouter()
-  const localActive = useLocale()
+  const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+  const localActive = useLocale();
 
   const onSelectChange = (value: string) => {
-    const nextLocale = value
+    const nextLocale = value;
     startTransition(() => {
       router.replace(`/${nextLocale}`);
     });
-  }
+  };
 
   return (
     <Select defaultValue={localActive} disabled={isPending} onValueChange={onSelectChange}>
-      <SelectTrigger className="w-[38px] py-0">
+      <SelectTrigger className="w-[38px] py-0" aria-label="Select Language">
         <SelectValue placeholder="Select Language" />
       </SelectTrigger>
       <SelectContent>
@@ -38,7 +37,7 @@ export const DropdownSwitch = () => {
                 src="/usa-flag-round-circle-icon.svg"
                 width={23}
                 height={23}
-                alt="flag"
+                alt="USA flag"
                 className="object-cover"
               />
               <h1>English</h1>
@@ -50,7 +49,7 @@ export const DropdownSwitch = () => {
                 src="/cambodia-flag.svg"
                 width={23}
                 height={23}
-                alt="flag"
+                alt="Cambodia flag"
                 className="object-cover"
               />
               <h1>Khmer</h1>
