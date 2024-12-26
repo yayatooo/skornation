@@ -3,8 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { GallerySlide } from "@/app/utils/data";
 import Image from "next/image";
+import { GallerySlide } from "@/app/utils/data";
 
 export const SwiperAbout = () => {
   // Calculate minimum slides needed for loop (at least 4 slides for smooth looping)
