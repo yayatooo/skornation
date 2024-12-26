@@ -7,8 +7,9 @@ import Footer from "../module/common/Footer";
 
 export const metadata: Metadata = {
   title: "SKORNATION",
+  description:
+    "Discover the latest deals and exclusive offers at SKORNATION. Shop now for great discounts and free shipping!",
 };
-
 
 export default async function RootLayout({
   children,
