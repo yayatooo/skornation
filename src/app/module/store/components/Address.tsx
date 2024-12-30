@@ -37,7 +37,7 @@ export const Address = () => {
             href="https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6"
             target="_blank"
           >
-            Discover More
+            Get Direction
           </Button>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { DropdownSwitch } from "./DropdownSwitch";
 import { SideMenu } from "./SideMenu";
 import { Navlink } from "@/app/utils/data";
 import { Link } from "@/i18n/routing";
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -32,7 +32,12 @@ export const Navbar = () => {
   return (
     <>
       <SideMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <motion.nav className="bg-white sticky top-[36px] m-0 z-20 w-full py-3 lg:py-5 shadow-sm" animate={{y:0}} initial={{y:-140}} transition={{duration:0.3}}>
+      <motion.nav
+        className="bg-white sticky top-0 m-0 z-20 w-full py-3 lg:py-5 shadow-sm"
+        animate={{ y: 0 }}
+        initial={{ y: -140 }}
+        transition={{ duration: 0.3 }}
+      >
         <div className="w-10/12 mx-auto flex justify-between items-center ">
           <div className="lg:hidden">
             <Menu onClick={handleOpenMenu} />

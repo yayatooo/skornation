@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { MavenPro } from "../fonts/font";
 import "../globals.css";
-import { PromoDropDown } from "../module/common/PromoDropDown";
 import { Navbar } from "../module/common/Navbar";
 import Footer from "../module/common/Footer";
 
@@ -22,7 +21,6 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={MavenPro.className}>
-        <PromoDropDown />
         <Navbar />
         {children}
         <Footer />

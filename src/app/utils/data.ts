@@ -98,6 +98,16 @@ export const GallerySlide = [
     title: "gallery",
     image: "/assets/gallery-3.jpg",
   },
+  {
+    id: 4,
+    title: "gallery",
+    image: "/assets/gallery-4.png",
+  },
+  {
+    id: 5,
+    title: "gallery",
+    image: "/assets/gallery-5.png",
+  },
 ];
 
 export const Brands = [
@@ -231,7 +241,7 @@ export const socialLinks = [
     label: "Instagram",
   },
   {
-    href: "https://maps.app.goo.gl/GNiMABpA4Q5yQHvr6",
+    href: "https://t.me/SKOR_Cambodia",
     icon: TelegramIcons,
     label: "Location",
   },

@@ -18,7 +18,14 @@ export default function Footer() {
             <div className="space-y-2">
               <p className="font-semibold text-white">Contact Us</p>
               <p>skor@bold-lifestyle.com</p>
-              <p>Telegram</p>
+              <a
+                href="https://t.me/SKOR_Cambodia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Telegram
+              </a>
             </div>
             <div className="space-y-2">
               <p className="font-semibold text-white">Follow Us</p>

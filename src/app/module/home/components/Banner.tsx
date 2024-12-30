@@ -27,12 +27,7 @@ export const Banner = () => {
 
   return (
     <section className="w-full relative" id="home">
-      <motion.div
-        initial={{ filter: "blur(10px)", scale: 0 }}
-        animate={{ filter: "blur(0px)", scale: 1 }}
-        transition={{ duration: 1 }}
-        className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]"
-      >
+      <div className="w-full aspect-[16/9] md:aspect-[21/9] xl:aspect-[21/7]">
         <Swiper
           modules={[Autoplay, Pagination]}
           breakpoints={{
@@ -65,7 +60,12 @@ export const Banner = () => {
         >
           {slidesData.map((item, index) => (
             <SwiperSlide key={`${item.id}-${index}`}>
-              <div className="relative w-full h-full">
+              <motion.div
+                className="relative w-full h-full"
+                initial={{ filter: "blur(10px)", scale: 0 }}
+                animate={{ filter: "blur(0px)", scale: 1 }}
+                transition={{ duration: 1 }}
+              >
                 <div className=" relative w-full h-full">
                   <Image
                     src={item.image}
@@ -76,11 +76,11 @@ export const Banner = () => {
                     className="object-cover"
                   />
                 </div>
-              </div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
-      </motion.div>
+      </div>
     </section>
   );
 };

@@ -10,13 +10,12 @@ import styles from "./about.module.css";
 import { Pagination } from "swiper/modules";
 
 export const SwiperAbout = () => {
-  // Calculate minimum slides needed for loop (at least 4 slides for smooth looping)
   const minSlidesNeeded = 4;
 
-  // Create duplicated slides array if needed
+  
   const slidesData =
     GallerySlide.length < minSlidesNeeded
-      ? [...GallerySlide, ...GallerySlide, ...GallerySlide] // Triple the slides if needed
+      ? [...GallerySlide] 
       : GallerySlide;
 
   return (
