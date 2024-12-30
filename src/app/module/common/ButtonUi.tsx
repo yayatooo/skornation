@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonUiProps> = ({ href, children, className, tar
         href={href}
         target={target}
         rel={isExternal ? "noopener noreferrer" : undefined} // Add rel only if opening in a new tab
-        className={`bg-black text-white font-semibold flex items-center gap-2 p-3 xl:text-2xl hover:bg-darkThird transition-all ${className}`}
+        className={`bg-black text-white font-semibold flex items-center gap-2 p-3 xl:text-2xl transform transition-transform duration-300 hover:scale-105 ${className}`}
       >
         {children} <ArrowRight className="text-redPrimary" />
       </Link>

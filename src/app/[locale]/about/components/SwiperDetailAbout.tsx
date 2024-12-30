@@ -9,7 +9,7 @@ export const SwiperDetailAbout = () => {
   return (
     <section className="mb-4">
         <SwiperAbout />
-        <div className="lg:text-3xl text-center mt-4 w-10/12 mx-auto">
+        <div className="lg:text-3xl text-center mt-12 w-10/12 mx-auto">
           <h1>
            {t('SwiperProfile')}
           </h1>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import * as motion from "motion/react-client";
 
 interface BrandCardProps {
   id?: number;
@@ -13,7 +14,12 @@ interface BrandCardProps {
 export const CardBrands = ({ image,title }: BrandCardProps) => {
   return (
     <>
-       <div className="group relative w-full">
+       <motion.div 
+        initial={{ filter: "blur(10px)", scale: 0 }}
+        animate={{ filter: "blur(0px)", scale: 1 }}
+        transition={{ duration: 1 }}
+       
+       className="group relative w-full">
       <div className="relative w-full aspect-[2/4] bg-gray-100">
         <Image
           src={image}
@@ -24,7 +30,7 @@ export const CardBrands = ({ image,title }: BrandCardProps) => {
           blurDataURL={image}
         />
       </div>
-    </div>
+    </motion.div>
     </>
   );
 };

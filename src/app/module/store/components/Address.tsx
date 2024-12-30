@@ -29,7 +29,8 @@ export const Address = () => {
           <h1 className="font-extrabold cursor-pointer">SKOR CAMBODIA</h1>
         </div>
         <div className="font-medium text-sm lg:text-2xl text-center lg:text-start pb-4">
-          <p>443A Preah Monivong Blvd (93) Phnom Penh, Cambodia</p>
+          <p>443A, Preah Monivong Blvd (93), St.105,
+          Sangkat Boeung Prolit, Khan 7 Makara, Phnom Penh</p>
         </div>
         <div className="flex justify-center lg:justify-start">
           <Button

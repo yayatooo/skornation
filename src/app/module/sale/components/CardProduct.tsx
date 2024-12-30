@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { ProductsDummy } from "@/app/utils/data";
+import * as motion from "motion/react-client";
 
 export const CardProduct = () => {
   // Calculate if we have enough slides for loop mode
@@ -15,17 +16,17 @@ export const CardProduct = () => {
     <div className="mt-6">
       <Swiper
         breakpoints={{
-          350: { 
+          350: {
             slidesPerView: Math.min(1.5, ProductsDummy.length),
-            spaceBetween: 15 
+            spaceBetween: 15,
           },
-          650: { 
+          650: {
             slidesPerView: Math.min(2.2, ProductsDummy.length),
-            spaceBetween: 15 
+            spaceBetween: 15,
           },
-          768: { 
+          768: {
             slidesPerView: Math.min(3.5, ProductsDummy.length),
-            spaceBetween: 15 
+            spaceBetween: 15,
           },
         }}
         loop={hasEnoughSlides}
@@ -34,12 +35,17 @@ export const CardProduct = () => {
         className="w-full"
       >
         {/* Double the slides if we need looping */}
-        {[...ProductsDummy, ...(hasEnoughSlides ? ProductsDummy : [])]
-          .map((item, index) => (
+        {[...ProductsDummy, ...(hasEnoughSlides ? ProductsDummy : [])].map(
+          (item, index) => (
             <SwiperSlide key={`${item.title}-${index}`}>
               <div className="group flex flex-col h-full transition-transform duration-300 hover:-translate-y-1">
                 {/* Image Container */}
-                <div className="relative w-full aspect-square overflow-hidden">
+                <motion.div
+                  className="relative w-full aspect-square overflow-hidden"
+                  initial={{ filter: "blur(6px)" }}
+                  animate={{ filter: "blur(0px)" }}
+                  transition={{ duration: 0.5, delay: 1, ease: "linear" }}
+                >
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -48,7 +54,7 @@ export const CardProduct = () => {
                     sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
                     blurDataURL={item.image}
                   />
-                </div>
+                </motion.div>
 
                 {/* Content Container */}
                 <div className="flex justify-between items-center px-2 py-3">
@@ -58,7 +64,8 @@ export const CardProduct = () => {
                 </div>
               </div>
             </SwiperSlide>
-          ))}
+          )
+        )}
       </Swiper>
     </div>
   );

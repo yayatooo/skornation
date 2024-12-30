@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { ChevronDown, X } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import * as motion from "motion/react-client";
 
 export const PromoDropDown = () => {
   const [openDropDown, setOpenDropDown] = useState(false);
@@ -19,9 +20,10 @@ export const PromoDropDown = () => {
 
   return (
     <>
-      <section
+      <motion.section
         className="bg-redPrimary sticky top-0 z-40 w-full py-2"
         onClick={handleDropDown}
+        animate={{y:0}} initial={{y:-100}} transition={{duration:0.3}}
       >
         <div className="w-10/12 mx-auto">
           <div className="flex justify-center items-center text-white font-bold">
@@ -33,7 +35,7 @@ export const PromoDropDown = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <div
         className={clsx(
           "fixed z-30 bg-white h-screen w-full p-8 mt-8 transition-all",
