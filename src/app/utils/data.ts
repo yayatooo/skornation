@@ -29,34 +29,64 @@ export const Navlink = [
 export const ProductsDummy = [
   {
     id: 1,
-    title: "Nike Zoom Vomero 5 Khaki",
+    title: "Nike Zoom Superfly 9 Academy Fg/Mg",
     genderCategory: "Men's",
-    image: "/assets/product-1.png",
+    image: "/assets/products/product-1.jpg",
   },
   {
     id: 2,
-    title: "Nike Zoom Vomero 5 White",
+    title: "Nike Offcourt Adjust",
     genderCategory: "Women's",
-    image: "/assets/product-2.png",
+    image: "/assets/products/product-2.png",
   },
   {
     id: 3,
-    title: "Nike Zoom Vomero 5 Black",
+    title: "Air Jordan 1 Retro High Og",
     genderCategory: "Unisex",
-    image: "/assets/product-3.png",
+    image: "/assets/products/product-3.png",
   },
   {
     id: 4,
-    title: "Nike Zoom Vomero 5 Cream",
+    title: "Nike Zoom Bella 6",
     genderCategory: "Women's",
-    image: "/assets/product-4.png",
+    image: "/assets/products/product-4.png",
   },
   {
     id: 5,
-    title: "Nike Zoom Vomero 5 Red",
+    title: "Cloudultra 2",
     genderCategory: "Men's",
-    image: "/assets/product-5.png",
+    image: "/assets/products/product-5.webp",
   },
+  {
+    id: 6,
+    title: "Cloudrunner 2",
+    genderCategory: "Men's",
+    image: "/assets/products/product-6.jpg",
+  },
+  {
+    id: 7,
+    title: "Cloud 5",
+    genderCategory: "Men's",
+    image: "/assets/products/product-7.jpeg",
+  },
+  {
+    id: 8,
+    title: "Cloudmonster 2",
+    genderCategory: "Men's",
+    image: "/assets/products/product-8.webp",
+  },
+  {
+    id: 9,
+    title: "Nike Sportswear Premium Essentials",
+    genderCategory: "Men's",
+    image: "/assets/products/product-9.png",
+  },
+  {
+    id: 10,
+    title: "Nike Dri-Fit Stride",
+    genderCategory: "Men's",
+    image: "/assets/products/product-10.png",
+  }
 ];
 
 export const BannerSlide = [
